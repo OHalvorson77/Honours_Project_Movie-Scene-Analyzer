@@ -1,0 +1,70 @@
+{
+  "scene_overview": {
+    "setting": "An office environment with multiple computer screens displaying financial data.",
+    "time_of_day": "Daytime, indicated by the bright, even lighting.",
+    "atmosphere": "Tense and focused, with a sense of urgency due to the financial setting.",
+    "mood": "Anxiety and underlying stress, driven by the financial decisions being discussed."
+  },
+  "characters": [
+    {
+      "description": "A man sitting at a desk, working intensely with computer screens.",
+      "emotional_journey": "The character moves from anger to sadness, with moments of calm and surprise.",
+      "performance_notes": "His body language is tense, with focused staring and controlled movements, indicating high stress."
+    }
+  ],
+  "cinematic_elements": {
+    "camera_work": "Close-up shots emphasize the character's emotional state and the intensity of his work.",
+    "lighting": "Bright and even, highlighting the office setting and the character's expressions.",
+    "color_palette": "Neutral tones dominate, with blues and grays reinforcing the corporate atmosphere.",
+    "notable_techniques": "Frequent cuts between screens and the character's face to show the connection between actions and emotions."
+  },
+  "emotional_arc": {
+    "progression": "Starts with anger and transitions through sadness, fear, and surprise.",
+    "key_moments": [
+      "Angry yet sad expression when discussing medication.",
+      "Calm voice with fear when discussing an ongoing situation.",
+      "Happy voice but neutral face when mentioning being 'jacked in'."
+    ]
+  },
+  "conflict_interpretations": [
+    {
+      "timestamp": "10.0s",
+      "speech_emotion": "angry",
+      "face_emotion": "sad",
+      "interpretation": "The character may be frustrated with the situation but internally feeling hopeless.",
+      "narrative_significance": "Highlights the internal conflict and stress regarding medication."
+    },
+    {
+      "timestamp": "37.5s",
+      "speech_emotion": "calm",
+      "face_emotion": "fear",
+      "interpretation": "Trying to maintain composure while being internally anxious.",
+      "narrative_significance": "Shows the character's attempt to manage external pressures."
+    },
+    {
+      "timestamp": "40.1s",
+      "speech_emotion": "happy",
+      "face_emotion": "neutral",
+      "interpretation": "Expresses satisfaction with a task, while maintaining professionalism.",
+      "narrative_significance": "Reveals a moment of personal success amid ongoing stress."
+    }
+  ],
+  "themes": {
+    "central_themes": [
+      "The pressure of high-stakes environments.",
+      "The conflict between internal emotions and external expressions."
+    ],
+    "narrative_significance": "The scene underscores the protagonist's struggle with managing personal and professional stress."
+  },
+  "summary": "This tense office scene depicts a character grappling with the pressures of financial decision-making. Emotional conflicts highlight the stress and internal turmoil, while cinematic techniques emphasize the high-stakes environment.",
+  "_metadata": {
+    "model": "gpt-4o",
+    "frames_analyzed": 8,
+    "total_keyframes": 22,
+    "usage": {
+      "prompt_tokens": 1979,
+      "completion_tokens": 659,
+      "total_tokens": 2638
+    }
+  }
+}

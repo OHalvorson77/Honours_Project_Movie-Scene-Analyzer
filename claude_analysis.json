@@ -1,0 +1,92 @@
+{
+  "scene_overview": {
+    "setting": "Modern financial trading office with multiple computer monitors, trading terminals, and a sterile corporate environment",
+    "time_of_day": "Daytime, office hours",
+    "atmosphere": "Clinical, high-tech, and intensely focused with an underlying tension",
+    "mood": "Contemplative yet unsettling, suggesting internal conflict and moral ambiguity"
+  },
+  "characters": [
+    {
+      "description": "Main protagonist - young male trader in casual dark clothing, appears to be narrating his experience with performance-enhancing drugs in financial trading",
+      "emotional_journey": "Moves from introspective contemplation to growing unease about his situation, displaying internal conflict between success and moral concerns",
+      "performance_notes": "Actor demonstrates subtle facial expressions that contradict his calm narration, suggesting deeper psychological turmoil beneath the surface"
+    },
+    {
+      "description": "Secondary character - older man in business suit, appears to be a superior or colleague",
+      "emotional_journey": "Brief appearance suggests authority figure within the trading environment",
+      "performance_notes": "Minimal screen time but reinforces the corporate hierarchy and pressure"
+    }
+  ],
+  "cinematic_elements": {
+    "camera_work": "Close-ups emphasizing hands, eyes, and facial details; medium shots of the trading floor; intimate framing that creates psychological intimacy",
+    "lighting": "Cool, artificial office lighting with blue-green tones from computer screens creating a sterile, technological atmosphere",
+    "color_palette": "Dominated by cool blues, greens, and whites with warm skin tones creating contrast",
+    "notable_techniques": "Shallow depth of field, selective focus on key details like pills and hands, screen reflections in eyes"
+  },
+  "emotional_arc": {
+    "progression": "Begins with matter-of-fact recounting, escalates through growing unease about drug use, peaks with financial success revelation, ends with ominous implications",
+    "key_moments": [
+      "Taking pills scene",
+      "Intense computer work sequences",
+      "Revelation of $2 million success",
+      "Realization of consequences spreading"
+    ]
+  },
+  "conflict_interpretations": [
+    {
+      "timestamp": "7.7s",
+      "speech_emotion": "sad",
+      "face_emotion": "angry",
+      "interpretation": "Character feels regret about his situation while simultaneously harboring anger about the circumstances that led him there",
+      "narrative_significance": "Establishes internal conflict between acceptance and resentment of his choices"
+    },
+    {
+      "timestamp": "10.0s",
+      "speech_emotion": "disgust",
+      "face_emotion": "sad",
+      "interpretation": "Vocal disgust at his drug dependency contrasts with facial sadness about what he's become - showing shame beneath the self-loathing",
+      "narrative_significance": "Reveals the protagonist's complex relationship with his enhancement use - both disgusted by it and saddened by his dependence"
+    },
+    {
+      "timestamp": "34.0s-37.5s",
+      "speech_emotion": "sad",
+      "face_emotion": "angry",
+      "interpretation": "Speaking sadly about corruption while his face shows anger at the systemic injustice he's witnessing and participating in",
+      "narrative_significance": "Demonstrates moral awareness conflicting with anger at being part of a corrupt system"
+    },
+    {
+      "timestamp": "40.1s",
+      "speech_emotion": "disgust",
+      "face_emotion": "neutral",
+      "interpretation": "Maintains composed facade while verbally expressing disgust at his enhanced state, suggesting practiced emotional suppression",
+      "narrative_significance": "Shows how he's learned to mask his true feelings in the professional environment"
+    },
+    {
+      "timestamp": "49.8s",
+      "speech_emotion": "calm",
+      "face_emotion": "sad",
+      "interpretation": "Attempts to maintain narrative control with calm delivery while his face reveals sadness about the consequences unfolding",
+      "narrative_significance": "Final moment showing his inability to fully suppress awareness of the darker implications of his success"
+    }
+  ],
+  "themes": {
+    "central_themes": [
+      "Pharmaceutical enhancement and human performance",
+      "Moral compromise in pursuit of success",
+      "The cost of artificial achievement",
+      "Corporate culture and ethical corruption",
+      "Identity transformation through chemical dependency"
+    ],
+    "narrative_significance": "This scene establishes the protagonist's complex relationship with performance enhancement, showing both the seductive power of artificial ability and the psychological cost of compromising one's natural self for success."
+  },
+  "summary": "A financially successful but morally conflicted trader recounts his experience using performance-enhancing drugs to excel in day trading, revealing the psychological tension between artificial success and personal integrity. The scene masterfully uses emotion conflicts to show a character struggling to maintain composure while grappling with the ethical implications of his choices and their spreading consequences.",
+  "_metadata": {
+    "model": "claude-sonnet-4-20250514",
+    "frames_analyzed": 10,
+    "total_keyframes": 20,
+    "usage": {
+      "input_tokens": 13181,
+      "output_tokens": 1163
+    }
+  }
+}

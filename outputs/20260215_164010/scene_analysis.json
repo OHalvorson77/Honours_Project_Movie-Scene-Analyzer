@@ -1,0 +1,25 @@
+{
+  "scene_overview": {
+    "setting": "Analysis requires OPENAI_API_KEY",
+    "time_of_day": "N/A",
+    "atmosphere": "Set OPENAI_API_KEY environment variable for AI analysis",
+    "mood": "N/A"
+  },
+  "characters": [],
+  "cinematic_elements": {
+    "camera_work": "N/A",
+    "lighting": "N/A",
+    "color_palette": "N/A",
+    "notable_techniques": "N/A"
+  },
+  "emotional_arc": {
+    "progression": "N/A",
+    "key_moments": []
+  },
+  "conflict_interpretations": [],
+  "themes": {
+    "central_themes": [],
+    "narrative_significance": "N/A"
+  },
+  "summary": "AI scene analysis not available. Set OPENAI_API_KEY for GPT-4o analysis."
+}

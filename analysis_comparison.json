@@ -1,0 +1,197 @@
+{
+  "models_compared": {
+    "gpt4o": "gpt-4o",
+    "claude": "claude-sonnet-4-20250514"
+  },
+  "scene_overview": {
+    "setting": {
+      "match": false,
+      "similarity": 0.3,
+      "gpt4o": "A day trading firm office with multiple computer screens displaying market data.",
+      "claude": "Modern financial trading office with multiple computer monitors, trading terminals, and a sterile corporate environment"
+    },
+    "time_of_day": {
+      "match": false,
+      "similarity": 0.11,
+      "gpt4o": "Indeterminate, likely daytime given the office environment.",
+      "claude": "Daytime, office hours"
+    },
+    "atmosphere": {
+      "match": false,
+      "similarity": 0.21,
+      "gpt4o": "Tense and focused, with an undercurrent of urgency.",
+      "claude": "Clinical, high-tech, and intensely focused with an underlying tension"
+    },
+    "mood": {
+      "match": false,
+      "similarity": 0.06,
+      "gpt4o": "Intense and slightly chaotic, reflecting the high-stakes environment.",
+      "claude": "Contemplative yet unsettling, suggesting internal conflict and moral ambiguity"
+    }
+  },
+  "emotional_arc": {},
+  "themes": {
+    "match": false,
+    "common": [],
+    "only_gpt4o": [
+      "the internal conflict between personal ethics and professional obligations.",
+      "the moral and emotional complexities of high-stakes trading."
+    ],
+    "only_claude": [
+      "the cost of artificial achievement",
+      "identity transformation through chemical dependency",
+      "corporate culture and ethical corruption",
+      "moral compromise in pursuit of success",
+      "pharmaceutical enhancement and human performance"
+    ],
+    "gpt4o": [
+      "The moral and emotional complexities of high-stakes trading.",
+      "The internal conflict between personal ethics and professional obligations."
+    ],
+    "claude": [
+      "Pharmaceutical enhancement and human performance",
+      "Moral compromise in pursuit of success",
+      "The cost of artificial achievement",
+      "Corporate culture and ethical corruption",
+      "Identity transformation through chemical dependency"
+    ]
+  },
+  "conflict_interpretations": [
+    {
+      "timestamp": "10.0s",
+      "gpt4o_interpretation": "Disgust at self-medication, yet feeling helpless and sad about the necessity.",
+      "claude_interpretation": "Vocal disgust at his drug dependency contrasts with facial sadness about what he's become - showing shame beneath the self-loathing",
+      "both_present": true
+    },
+    {
+      "timestamp": "34.0s",
+      "gpt4o_interpretation": "Sadness about unethical practices, with anger at the injustice.",
+      "claude_interpretation": "N/A",
+      "both_present": false
+    },
+    {
+      "timestamp": "34.0s-37.5s",
+      "gpt4o_interpretation": "N/A",
+      "claude_interpretation": "Speaking sadly about corruption while his face shows anger at the systemic injustice he's witnessing and participating in",
+      "both_present": false
+    },
+    {
+      "timestamp": "38.5s",
+      "gpt4o_interpretation": "Calm acceptance of future events, internally feeling apprehensive.",
+      "claude_interpretation": "N/A",
+      "both_present": false
+    },
+    {
+      "timestamp": "40.1s",
+      "gpt4o_interpretation": "N/A",
+      "claude_interpretation": "Maintains composed facade while verbally expressing disgust at his enhanced state, suggesting practiced emotional suppression",
+      "both_present": false
+    },
+    {
+      "timestamp": "49.8s",
+      "gpt4o_interpretation": "N/A",
+      "claude_interpretation": "Attempts to maintain narrative control with calm delivery while his face reveals sadness about the consequences unfolding",
+      "both_present": false
+    },
+    {
+      "timestamp": "7.7s",
+      "gpt4o_interpretation": "The character is outwardly angry but internally sad, possibly frustrated with the situation.",
+      "claude_interpretation": "Character feels regret about his situation while simultaneously harboring anger about the circumstances that led him there",
+      "both_present": true
+    }
+  ],
+  "summaries": {
+    "gpt4o": "In a tense office environment, a trader grapples with emotional conflicts and ethical dilemmas. The scene uses close-ups and muted tones to emphasize the character's internal struggle amidst the high-stakes world of day trading.",
+    "claude": "A financially successful but morally conflicted trader recounts his experience using performance-enhancing drugs to excel in day trading, revealing the psychological tension between artificial success and personal integrity. The scene masterfully uses emotion conflicts to show a character struggling to maintain composure while grappling with the ethical implications of his choices and their spreading consequences."
+  },
+  "agreements": [],
+  "differences": [
+    "scene_overview.setting",
+    "scene_overview.time_of_day",
+    "scene_overview.atmosphere",
+    "scene_overview.mood"
+  ],
+  "consensus": {
+    "scene_overview": {
+      "setting": "Modern financial trading office with multiple computer monitors, trading terminals, and a sterile corporate environment",
+      "time_of_day": "Indeterminate, likely daytime given the office environment.",
+      "atmosphere": "Clinical, high-tech, and intensely focused with an underlying tension",
+      "mood": "Contemplative yet unsettling, suggesting internal conflict and moral ambiguity"
+    },
+    "themes": [
+      "The cost of artificial achievement",
+      "Corporate culture and ethical corruption",
+      "Identity transformation through chemical dependency",
+      "The internal conflict between personal ethics and professional obligations.",
+      "Moral compromise in pursuit of success",
+      "The moral and emotional complexities of high-stakes trading.",
+      "Pharmaceutical enhancement and human performance"
+    ],
+    "emotional_arc": {
+      "progression": "The scene starts with anger, moves through phases of sadness and disgust, and ends on a note of calm resignation.",
+      "key_moments": [
+        "Anger at 7.7s when discussing the trading firm.",
+        "Sadness and disgust at 10.0s about medication.",
+        "Calm at 38.5s about an announcement."
+      ]
+    },
+    "summary": "GPT-4o: In a tense office environment, a trader grapples with emotional conflicts and ethical dilemmas. The scene uses close-ups and muted tones to emphasize the character's internal struggle amidst the high-stakes world of day trading.\n\nClaude: A financially successful but morally conflicted trader recounts his experience using performance-enhancing drugs to excel in day trading, revealing the psychological tension between artificial success and personal integrity. The scene masterfully uses emotion conflicts to show a character struggling to maintain composure while grappling with the ethical implications of his choices and their spreading consequences.",
+    "conflict_interpretations": [
+      {
+        "timestamp": "10.0s",
+        "interpretations": {
+          "gpt4o": "Disgust at self-medication, yet feeling helpless and sad about the necessity.",
+          "claude": "Vocal disgust at his drug dependency contrasts with facial sadness about what he's become - showing shame beneath the self-loathing"
+        }
+      },
+      {
+        "timestamp": "34.0s",
+        "interpretations": {
+          "gpt4o": "Sadness about unethical practices, with anger at the injustice.",
+          "claude": "N/A"
+        }
+      },
+      {
+        "timestamp": "34.0s-37.5s",
+        "interpretations": {
+          "gpt4o": "N/A",
+          "claude": "Speaking sadly about corruption while his face shows anger at the systemic injustice he's witnessing and participating in"
+        }
+      },
+      {
+        "timestamp": "38.5s",
+        "interpretations": {
+          "gpt4o": "Calm acceptance of future events, internally feeling apprehensive.",
+          "claude": "N/A"
+        }
+      },
+      {
+        "timestamp": "40.1s",
+        "interpretations": {
+          "gpt4o": "N/A",
+          "claude": "Maintains composed facade while verbally expressing disgust at his enhanced state, suggesting practiced emotional suppression"
+        }
+      },
+      {
+        "timestamp": "49.8s",
+        "interpretations": {
+          "gpt4o": "N/A",
+          "claude": "Attempts to maintain narrative control with calm delivery while his face reveals sadness about the consequences unfolding"
+        }
+      },
+      {
+        "timestamp": "7.7s",
+        "interpretations": {
+          "gpt4o": "The character is outwardly angry but internally sad, possibly frustrated with the situation.",
+          "claude": "Character feels regret about his situation while simultaneously harboring anger about the circumstances that led him there"
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "total_fields_compared": 4,
+    "agreements": 0,
+    "differences": 4,
+    "agreement_rate": 0.0
+  }
+}

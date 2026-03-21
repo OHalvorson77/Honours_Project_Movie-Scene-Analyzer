@@ -1,0 +1,1517 @@
+[
+  {
+    "filename": "frame_0001.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.867,
+    "all_emotions": {
+      "angry": 0.003,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.072,
+      "sad": 0.057,
+      "surprise": 0.0,
+      "neutral": 0.867
+    }
+  },
+  {
+    "filename": "frame_0002.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.888,
+    "all_emotions": {
+      "angry": 0.002,
+      "disgust": 0.0,
+      "fear": 0.001,
+      "happy": 0.034,
+      "sad": 0.074,
+      "surprise": 0.001,
+      "neutral": 0.888
+    }
+  },
+  {
+    "filename": "frame_0003.jpg",
+    "face_detected": true,
+    "dominant_emotion": "happy",
+    "confidence": 0.998,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.998,
+      "sad": 0.001,
+      "surprise": 0.0,
+      "neutral": 0.001
+    }
+  },
+  {
+    "filename": "frame_0004.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.677,
+    "all_emotions": {
+      "angry": 0.096,
+      "disgust": 0.0,
+      "fear": 0.064,
+      "happy": 0.012,
+      "sad": 0.151,
+      "surprise": 0.0,
+      "neutral": 0.677
+    }
+  },
+  {
+    "filename": "frame_0005.jpg",
+    "face_detected": true,
+    "dominant_emotion": "happy",
+    "confidence": 0.958,
+    "all_emotions": {
+      "angry": 0.002,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.958,
+      "sad": 0.005,
+      "surprise": 0.0,
+      "neutral": 0.035
+    }
+  },
+  {
+    "filename": "frame_0006.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.419,
+    "all_emotions": {
+      "angry": 0.229,
+      "disgust": 0.0,
+      "fear": 0.318,
+      "happy": 0.008,
+      "sad": 0.419,
+      "surprise": 0.001,
+      "neutral": 0.025
+    }
+  },
+  {
+    "filename": "frame_0007.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.505,
+    "all_emotions": {
+      "angry": 0.396,
+      "disgust": 0.0,
+      "fear": 0.017,
+      "happy": 0.001,
+      "sad": 0.081,
+      "surprise": 0.0,
+      "neutral": 0.505
+    }
+  },
+  {
+    "filename": "frame_0008.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.592,
+    "all_emotions": {
+      "angry": 0.014,
+      "disgust": 0.168,
+      "fear": 0.147,
+      "happy": 0.0,
+      "sad": 0.592,
+      "surprise": 0.0,
+      "neutral": 0.08
+    }
+  },
+  {
+    "filename": "frame_0009.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.424,
+    "all_emotions": {
+      "angry": 0.056,
+      "disgust": 0.201,
+      "fear": 0.424,
+      "happy": 0.001,
+      "sad": 0.299,
+      "surprise": 0.001,
+      "neutral": 0.018
+    }
+  },
+  {
+    "filename": "frame_0010.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.569,
+    "all_emotions": {
+      "angry": 0.061,
+      "disgust": 0.0,
+      "fear": 0.095,
+      "happy": 0.009,
+      "sad": 0.262,
+      "surprise": 0.005,
+      "neutral": 0.569
+    }
+  },
+  {
+    "filename": "frame_0011.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.803,
+    "all_emotions": {
+      "angry": 0.047,
+      "disgust": 0.0,
+      "fear": 0.803,
+      "happy": 0.0,
+      "sad": 0.145,
+      "surprise": 0.0,
+      "neutral": 0.004
+    }
+  },
+  {
+    "filename": "frame_0012.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.95,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.95,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.05
+    }
+  },
+  {
+    "filename": "frame_0013.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.999,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.001,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.999
+    }
+  },
+  {
+    "filename": "frame_0014.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.88,
+    "all_emotions": {
+      "angry": 0.057,
+      "disgust": 0.0,
+      "fear": 0.88,
+      "happy": 0.0,
+      "sad": 0.055,
+      "surprise": 0.0,
+      "neutral": 0.008
+    }
+  },
+  {
+    "filename": "frame_0015.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 1.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0016.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.502,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.015,
+      "happy": 0.459,
+      "sad": 0.502,
+      "surprise": 0.0,
+      "neutral": 0.024
+    }
+  },
+  {
+    "filename": "frame_0017.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.569,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.569,
+      "happy": 0.015,
+      "sad": 0.409,
+      "surprise": 0.0,
+      "neutral": 0.008
+    }
+  },
+  {
+    "filename": "frame_0018.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.983,
+    "all_emotions": {
+      "angry": 0.983,
+      "disgust": 0.0,
+      "fear": 0.001,
+      "happy": 0.0,
+      "sad": 0.016,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0019.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.462,
+    "all_emotions": {
+      "angry": 0.188,
+      "disgust": 0.0,
+      "fear": 0.322,
+      "happy": 0.0,
+      "sad": 0.462,
+      "surprise": 0.0,
+      "neutral": 0.028
+    }
+  },
+  {
+    "filename": "frame_0020.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.417,
+    "all_emotions": {
+      "angry": 0.391,
+      "disgust": 0.0,
+      "fear": 0.417,
+      "happy": 0.0,
+      "sad": 0.192,
+      "surprise": 0.0,
+      "neutral": 0.001
+    }
+  },
+  {
+    "filename": "frame_0021.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 1.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0022.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.991,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.009,
+      "happy": 0.0,
+      "sad": 0.991,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0023.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.631,
+    "all_emotions": {
+      "angry": 0.031,
+      "disgust": 0.0,
+      "fear": 0.229,
+      "happy": 0.0,
+      "sad": 0.631,
+      "surprise": 0.0,
+      "neutral": 0.108
+    }
+  },
+  {
+    "filename": "frame_0024.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.983,
+    "all_emotions": {
+      "angry": 0.001,
+      "disgust": 0.0,
+      "fear": 0.01,
+      "happy": 0.0,
+      "sad": 0.983,
+      "surprise": 0.0,
+      "neutral": 0.007
+    }
+  },
+  {
+    "filename": "frame_0025.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.746,
+    "all_emotions": {
+      "angry": 0.008,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.238,
+      "sad": 0.005,
+      "surprise": 0.003,
+      "neutral": 0.746
+    }
+  },
+  {
+    "filename": "frame_0026.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 1.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0027.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.544,
+    "all_emotions": {
+      "angry": 0.04,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.389,
+      "sad": 0.021,
+      "surprise": 0.005,
+      "neutral": 0.544
+    }
+  },
+  {
+    "filename": "frame_0028.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.63,
+    "all_emotions": {
+      "angry": 0.007,
+      "disgust": 0.006,
+      "fear": 0.001,
+      "happy": 0.352,
+      "sad": 0.63,
+      "surprise": 0.0,
+      "neutral": 0.004
+    }
+  },
+  {
+    "filename": "frame_0029.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.787,
+    "all_emotions": {
+      "angry": 0.787,
+      "disgust": 0.0,
+      "fear": 0.025,
+      "happy": 0.127,
+      "sad": 0.057,
+      "surprise": 0.0,
+      "neutral": 0.003
+    }
+  },
+  {
+    "filename": "frame_0030.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.604,
+    "all_emotions": {
+      "angry": 0.604,
+      "disgust": 0.175,
+      "fear": 0.032,
+      "happy": 0.172,
+      "sad": 0.015,
+      "surprise": 0.0,
+      "neutral": 0.003
+    }
+  },
+  {
+    "filename": "frame_0031.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.998,
+    "all_emotions": {
+      "angry": 0.998,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.002,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0032.jpg",
+    "face_detected": true,
+    "dominant_emotion": "happy",
+    "confidence": 0.83,
+    "all_emotions": {
+      "angry": 0.013,
+      "disgust": 0.0,
+      "fear": 0.149,
+      "happy": 0.83,
+      "sad": 0.007,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0033.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.396,
+    "all_emotions": {
+      "angry": 0.396,
+      "disgust": 0.0,
+      "fear": 0.242,
+      "happy": 0.001,
+      "sad": 0.331,
+      "surprise": 0.0,
+      "neutral": 0.03
+    }
+  },
+  {
+    "filename": "frame_0034.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.996,
+    "all_emotions": {
+      "angry": 0.996,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.004,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0035.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.984,
+    "all_emotions": {
+      "angry": 0.984,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.004,
+      "sad": 0.011,
+      "surprise": 0.0,
+      "neutral": 0.001
+    }
+  },
+  {
+    "filename": "frame_0036.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.998,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.998,
+      "surprise": 0.0,
+      "neutral": 0.002
+    }
+  },
+  {
+    "filename": "frame_0037.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 1.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0038.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 1.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0039.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 1.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0040.jpg",
+    "face_detected": true,
+    "dominant_emotion": "happy",
+    "confidence": 0.598,
+    "all_emotions": {
+      "angry": 0.007,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.598,
+      "sad": 0.002,
+      "surprise": 0.0,
+      "neutral": 0.392
+    }
+  },
+  {
+    "filename": "frame_0041.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.929,
+    "all_emotions": {
+      "angry": 0.07,
+      "disgust": 0.0,
+      "fear": 0.929,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0042.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 1.0,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0043.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.855,
+    "all_emotions": {
+      "angry": 0.855,
+      "disgust": 0.0,
+      "fear": 0.145,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0044.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.964,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.013,
+      "happy": 0.001,
+      "sad": 0.018,
+      "surprise": 0.004,
+      "neutral": 0.964
+    }
+  },
+  {
+    "filename": "frame_0045.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.97,
+    "all_emotions": {
+      "angry": 0.001,
+      "disgust": 0.0,
+      "fear": 0.002,
+      "happy": 0.003,
+      "sad": 0.97,
+      "surprise": 0.0,
+      "neutral": 0.025
+    }
+  },
+  {
+    "filename": "frame_0046.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.978,
+    "all_emotions": {
+      "angry": 0.003,
+      "disgust": 0.0,
+      "fear": 0.006,
+      "happy": 0.006,
+      "sad": 0.978,
+      "surprise": 0.0,
+      "neutral": 0.008
+    }
+  },
+  {
+    "filename": "frame_0047.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.649,
+    "all_emotions": {
+      "angry": 0.004,
+      "disgust": 0.0,
+      "fear": 0.649,
+      "happy": 0.0,
+      "sad": 0.289,
+      "surprise": 0.0,
+      "neutral": 0.059
+    }
+  },
+  {
+    "filename": "frame_0048.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 1.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0049.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 1.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0050.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 1.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0051.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 1.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0052.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.982,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.982,
+      "surprise": 0.0,
+      "neutral": 0.018
+    }
+  },
+  {
+    "filename": "frame_0053.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.914,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.001,
+      "happy": 0.0,
+      "sad": 0.914,
+      "surprise": 0.0,
+      "neutral": 0.085
+    }
+  },
+  {
+    "filename": "frame_0054.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.841,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.019,
+      "happy": 0.0,
+      "sad": 0.841,
+      "surprise": 0.0,
+      "neutral": 0.139
+    }
+  },
+  {
+    "filename": "frame_0055.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.961,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.032,
+      "happy": 0.0,
+      "sad": 0.961,
+      "surprise": 0.0,
+      "neutral": 0.007
+    }
+  },
+  {
+    "filename": "frame_0056.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.744,
+    "all_emotions": {
+      "angry": 0.002,
+      "disgust": 0.024,
+      "fear": 0.744,
+      "happy": 0.0,
+      "sad": 0.229,
+      "surprise": 0.0,
+      "neutral": 0.001
+    }
+  },
+  {
+    "filename": "frame_0057.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 1.0,
+    "all_emotions": {
+      "angry": 1.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0058.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.846,
+    "all_emotions": {
+      "angry": 0.846,
+      "disgust": 0.0,
+      "fear": 0.13,
+      "happy": 0.0,
+      "sad": 0.021,
+      "surprise": 0.0,
+      "neutral": 0.004
+    }
+  },
+  {
+    "filename": "frame_0059.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.499,
+    "all_emotions": {
+      "angry": 0.499,
+      "disgust": 0.007,
+      "fear": 0.251,
+      "happy": 0.0,
+      "sad": 0.235,
+      "surprise": 0.0,
+      "neutral": 0.008
+    }
+  },
+  {
+    "filename": "frame_0060.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.993,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.003,
+      "happy": 0.0,
+      "sad": 0.993,
+      "surprise": 0.0,
+      "neutral": 0.005
+    }
+  },
+  {
+    "filename": "frame_0061.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.985,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.013,
+      "happy": 0.0,
+      "sad": 0.985,
+      "surprise": 0.0,
+      "neutral": 0.001
+    }
+  },
+  {
+    "filename": "frame_0062.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.527,
+    "all_emotions": {
+      "angry": 0.002,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.455,
+      "sad": 0.015,
+      "surprise": 0.0,
+      "neutral": 0.527
+    }
+  },
+  {
+    "filename": "frame_0063.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.388,
+    "all_emotions": {
+      "angry": 0.251,
+      "disgust": 0.0,
+      "fear": 0.031,
+      "happy": 0.227,
+      "sad": 0.388,
+      "surprise": 0.0,
+      "neutral": 0.102
+    }
+  },
+  {
+    "filename": "frame_0064.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.412,
+    "all_emotions": {
+      "angry": 0.336,
+      "disgust": 0.0,
+      "fear": 0.011,
+      "happy": 0.0,
+      "sad": 0.241,
+      "surprise": 0.0,
+      "neutral": 0.412
+    }
+  },
+  {
+    "filename": "frame_0065.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.448,
+    "all_emotions": {
+      "angry": 0.279,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.448,
+      "surprise": 0.0,
+      "neutral": 0.273
+    }
+  },
+  {
+    "filename": "frame_0066.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.894,
+    "all_emotions": {
+      "angry": 0.018,
+      "disgust": 0.0,
+      "fear": 0.07,
+      "happy": 0.0,
+      "sad": 0.894,
+      "surprise": 0.001,
+      "neutral": 0.017
+    }
+  },
+  {
+    "filename": "frame_0067.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.775,
+    "all_emotions": {
+      "angry": 0.037,
+      "disgust": 0.0,
+      "fear": 0.12,
+      "happy": 0.002,
+      "sad": 0.775,
+      "surprise": 0.003,
+      "neutral": 0.062
+    }
+  },
+  {
+    "filename": "frame_0068.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.959,
+    "all_emotions": {
+      "angry": 0.007,
+      "disgust": 0.0,
+      "fear": 0.002,
+      "happy": 0.008,
+      "sad": 0.024,
+      "surprise": 0.0,
+      "neutral": 0.959
+    }
+  },
+  {
+    "filename": "frame_0069.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.988,
+    "all_emotions": {
+      "angry": 0.012,
+      "disgust": 0.0,
+      "fear": 0.988,
+      "happy": 0.0,
+      "sad": 0.0,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0070.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.948,
+    "all_emotions": {
+      "angry": 0.008,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.013,
+      "sad": 0.03,
+      "surprise": 0.0,
+      "neutral": 0.948
+    }
+  },
+  {
+    "filename": "frame_0071.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.772,
+    "all_emotions": {
+      "angry": 0.772,
+      "disgust": 0.0,
+      "fear": 0.044,
+      "happy": 0.06,
+      "sad": 0.063,
+      "surprise": 0.0,
+      "neutral": 0.06
+    }
+  },
+  {
+    "filename": "frame_0072.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.585,
+    "all_emotions": {
+      "angry": 0.585,
+      "disgust": 0.0,
+      "fear": 0.05,
+      "happy": 0.079,
+      "sad": 0.212,
+      "surprise": 0.0,
+      "neutral": 0.074
+    }
+  },
+  {
+    "filename": "frame_0073.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.956,
+    "all_emotions": {
+      "angry": 0.956,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.04,
+      "sad": 0.002,
+      "surprise": 0.0,
+      "neutral": 0.001
+    }
+  },
+  {
+    "filename": "frame_0074.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.821,
+    "all_emotions": {
+      "angry": 0.821,
+      "disgust": 0.002,
+      "fear": 0.002,
+      "happy": 0.093,
+      "sad": 0.026,
+      "surprise": 0.0,
+      "neutral": 0.056
+    }
+  },
+  {
+    "filename": "frame_0075.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.818,
+    "all_emotions": {
+      "angry": 0.818,
+      "disgust": 0.0,
+      "fear": 0.022,
+      "happy": 0.001,
+      "sad": 0.091,
+      "surprise": 0.0,
+      "neutral": 0.069
+    }
+  },
+  {
+    "filename": "frame_0076.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.421,
+    "all_emotions": {
+      "angry": 0.421,
+      "disgust": 0.001,
+      "fear": 0.04,
+      "happy": 0.14,
+      "sad": 0.187,
+      "surprise": 0.0,
+      "neutral": 0.212
+    }
+  },
+  {
+    "filename": "frame_0077.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.758,
+    "all_emotions": {
+      "angry": 0.006,
+      "disgust": 0.011,
+      "fear": 0.758,
+      "happy": 0.0,
+      "sad": 0.208,
+      "surprise": 0.0,
+      "neutral": 0.017
+    }
+  },
+  {
+    "filename": "frame_0078.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.957,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.957,
+      "happy": 0.0,
+      "sad": 0.043,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0079.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.87,
+    "all_emotions": {
+      "angry": 0.01,
+      "disgust": 0.001,
+      "fear": 0.87,
+      "happy": 0.0,
+      "sad": 0.119,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0080.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.937,
+    "all_emotions": {
+      "angry": 0.006,
+      "disgust": 0.0,
+      "fear": 0.057,
+      "happy": 0.0,
+      "sad": 0.937,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0081.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.999,
+    "all_emotions": {
+      "angry": 0.001,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "happy": 0.0,
+      "sad": 0.999,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0082.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.925,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.063,
+      "happy": 0.0,
+      "sad": 0.925,
+      "surprise": 0.0,
+      "neutral": 0.012
+    }
+  },
+  {
+    "filename": "frame_0083.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.998,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.002,
+      "happy": 0.0,
+      "sad": 0.998,
+      "surprise": 0.0,
+      "neutral": 0.0
+    }
+  },
+  {
+    "filename": "frame_0084.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.765,
+    "all_emotions": {
+      "angry": 0.029,
+      "disgust": 0.0,
+      "fear": 0.019,
+      "happy": 0.002,
+      "sad": 0.185,
+      "surprise": 0.0,
+      "neutral": 0.765
+    }
+  },
+  {
+    "filename": "frame_0085.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.963,
+    "all_emotions": {
+      "angry": 0.008,
+      "disgust": 0.0,
+      "fear": 0.001,
+      "happy": 0.0,
+      "sad": 0.028,
+      "surprise": 0.0,
+      "neutral": 0.963
+    }
+  },
+  {
+    "filename": "frame_0086.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.76,
+    "all_emotions": {
+      "angry": 0.008,
+      "disgust": 0.0,
+      "fear": 0.063,
+      "happy": 0.009,
+      "sad": 0.16,
+      "surprise": 0.0,
+      "neutral": 0.76
+    }
+  },
+  {
+    "filename": "frame_0087.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.503,
+    "all_emotions": {
+      "angry": 0.007,
+      "disgust": 0.0,
+      "fear": 0.001,
+      "happy": 0.035,
+      "sad": 0.503,
+      "surprise": 0.0,
+      "neutral": 0.453
+    }
+  },
+  {
+    "filename": "frame_0088.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.507,
+    "all_emotions": {
+      "angry": 0.056,
+      "disgust": 0.0,
+      "fear": 0.507,
+      "happy": 0.0,
+      "sad": 0.301,
+      "surprise": 0.0,
+      "neutral": 0.136
+    }
+  },
+  {
+    "filename": "frame_0089.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.852,
+    "all_emotions": {
+      "angry": 0.001,
+      "disgust": 0.0,
+      "fear": 0.852,
+      "happy": 0.012,
+      "sad": 0.133,
+      "surprise": 0.0,
+      "neutral": 0.002
+    }
+  },
+  {
+    "filename": "frame_0090.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.401,
+    "all_emotions": {
+      "angry": 0.088,
+      "disgust": 0.0,
+      "fear": 0.18,
+      "happy": 0.0,
+      "sad": 0.401,
+      "surprise": 0.0,
+      "neutral": 0.332
+    }
+  },
+  {
+    "filename": "frame_0091.jpg",
+    "face_detected": true,
+    "dominant_emotion": "neutral",
+    "confidence": 0.777,
+    "all_emotions": {
+      "angry": 0.04,
+      "disgust": 0.0,
+      "fear": 0.048,
+      "happy": 0.0,
+      "sad": 0.135,
+      "surprise": 0.0,
+      "neutral": 0.777
+    }
+  },
+  {
+    "filename": "frame_0092.jpg",
+    "face_detected": true,
+    "dominant_emotion": "fear",
+    "confidence": 0.605,
+    "all_emotions": {
+      "angry": 0.085,
+      "disgust": 0.015,
+      "fear": 0.605,
+      "happy": 0.0,
+      "sad": 0.205,
+      "surprise": 0.004,
+      "neutral": 0.086
+    }
+  },
+  {
+    "filename": "frame_0093.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.917,
+    "all_emotions": {
+      "angry": 0.917,
+      "disgust": 0.0,
+      "fear": 0.038,
+      "happy": 0.0,
+      "sad": 0.035,
+      "surprise": 0.0,
+      "neutral": 0.01
+    }
+  },
+  {
+    "filename": "frame_0094.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.41,
+    "all_emotions": {
+      "angry": 0.347,
+      "disgust": 0.0,
+      "fear": 0.207,
+      "happy": 0.0,
+      "sad": 0.41,
+      "surprise": 0.0,
+      "neutral": 0.037
+    }
+  },
+  {
+    "filename": "frame_0095.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.414,
+    "all_emotions": {
+      "angry": 0.289,
+      "disgust": 0.001,
+      "fear": 0.25,
+      "happy": 0.0,
+      "sad": 0.414,
+      "surprise": 0.0,
+      "neutral": 0.045
+    }
+  },
+  {
+    "filename": "frame_0096.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.429,
+    "all_emotions": {
+      "angry": 0.222,
+      "disgust": 0.0,
+      "fear": 0.264,
+      "happy": 0.0,
+      "sad": 0.429,
+      "surprise": 0.0,
+      "neutral": 0.084
+    }
+  },
+  {
+    "filename": "frame_0097.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.66,
+    "all_emotions": {
+      "angry": 0.66,
+      "disgust": 0.001,
+      "fear": 0.058,
+      "happy": 0.0,
+      "sad": 0.254,
+      "surprise": 0.0,
+      "neutral": 0.027
+    }
+  },
+  {
+    "filename": "frame_0098.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.524,
+    "all_emotions": {
+      "angry": 0.524,
+      "disgust": 0.0,
+      "fear": 0.051,
+      "happy": 0.0,
+      "sad": 0.377,
+      "surprise": 0.0,
+      "neutral": 0.048
+    }
+  },
+  {
+    "filename": "frame_0099.jpg",
+    "face_detected": true,
+    "dominant_emotion": "angry",
+    "confidence": 0.57,
+    "all_emotions": {
+      "angry": 0.57,
+      "disgust": 0.002,
+      "fear": 0.084,
+      "happy": 0.0,
+      "sad": 0.341,
+      "surprise": 0.0,
+      "neutral": 0.004
+    }
+  },
+  {
+    "filename": "frame_0100.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.654,
+    "all_emotions": {
+      "angry": 0.0,
+      "disgust": 0.0,
+      "fear": 0.152,
+      "happy": 0.0,
+      "sad": 0.654,
+      "surprise": 0.0,
+      "neutral": 0.194
+    }
+  },
+  {
+    "filename": "frame_0101.jpg",
+    "face_detected": true,
+    "dominant_emotion": "sad",
+    "confidence": 0.7,
+    "all_emotions": {
+      "angry": 0.222,
+      "disgust": 0.0,
+      "fear": 0.056,
+      "happy": 0.0,
+      "sad": 0.7,
+      "surprise": 0.0,
+      "neutral": 0.023
+    }
+  }
+]

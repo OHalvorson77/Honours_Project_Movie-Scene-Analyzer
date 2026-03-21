@@ -1,0 +1,96 @@
+{
+  "total_segments": 15,
+  "conflict_count": 9,
+  "conflicts": [
+    {
+      "segment": 0,
+      "time": "0.0s - 7.7s",
+      "text": "My new friend Kevin Doyle showed me how you could leverage two and a half times your cash",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "disgust",
+      "face_emotion": "neutral",
+      "speech_confidence": 0.133,
+      "face_confidence": 0.297
+    },
+    {
+      "segment": 2,
+      "time": "10.0s - 13.2s",
+      "text": "I've been upping the dose for over a week.",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "angry",
+      "face_emotion": "sad",
+      "speech_confidence": 0.141,
+      "face_confidence": 0.662
+    },
+    {
+      "segment": 3,
+      "time": "13.2s - 20.0s",
+      "text": "It seemed to cut my learning curve.",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "angry",
+      "face_emotion": "sad",
+      "speech_confidence": 0.134,
+      "face_confidence": 0.389
+    },
+    {
+      "segment": 4,
+      "time": "20.0s - 34.0s",
+      "text": "Hey, while you're buying that, the CEO was just indicted.",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "angry",
+      "face_emotion": "sad",
+      "speech_confidence": 0.131,
+      "face_confidence": 0.421
+    },
+    {
+      "segment": 6,
+      "time": "37.5s - 38.5s",
+      "text": "That's still on.",
+      "conflict_type": "suppressed_fear",
+      "speech_emotion": "calm",
+      "face_emotion": "fear",
+      "speech_confidence": 0.136,
+      "face_confidence": 0.399
+    },
+    {
+      "segment": 7,
+      "time": "38.5s - 40.1s",
+      "text": "Should be announced next week.",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "calm",
+      "face_emotion": "sad",
+      "speech_confidence": 0.133,
+      "face_confidence": 0.524
+    },
+    {
+      "segment": 8,
+      "time": "40.1s - 43.0s",
+      "text": "I was jacked in, booted up.",
+      "conflict_type": "possible_sarcasm",
+      "speech_emotion": "angry",
+      "face_emotion": "neutral",
+      "speech_confidence": 0.134,
+      "face_confidence": 0.5
+    },
+    {
+      "segment": 9,
+      "time": "43.0s - 47.8s",
+      "text": "At the end of the week, my brokerage account contained over $2 million.",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "angry",
+      "face_emotion": "sad",
+      "speech_confidence": 0.137,
+      "face_confidence": 0.297
+    },
+    {
+      "segment": 11,
+      "time": "49.8s - 50.8s",
+      "text": "That's all for this week.",
+      "conflict_type": "emotion_mismatch",
+      "speech_emotion": "surprised",
+      "face_emotion": "sad",
+      "speech_confidence": 0.136,
+      "face_confidence": 0.7
+    }
+  ]
+}

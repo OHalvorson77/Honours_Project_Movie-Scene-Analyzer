@@ -1,0 +1,870 @@
+[
+  {
+    "start": 0.0,
+    "end": 7.72,
+    "text": "My new friend Kevin Doyle showed me how you could leverage two and a half times your cash",
+    "speech_emotion": "surprised",
+    "speech_confidence": 0.131,
+    "face_emotion": "neutral",
+    "face_confidence": 0.297,
+    "face_distribution": {
+      "angry": 0.123,
+      "disgust": 0.023,
+      "fear": 0.232,
+      "happy": 0.159,
+      "sad": 0.165,
+      "surprise": 0.001,
+      "neutral": 0.297
+    },
+    "faces_detected": 16,
+    "fused_emotion": "neutral",
+    "fused_confidence": 0.297,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0001.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0001.jpg",
+        "timestamp": 0.0
+      },
+      {
+        "filename": "frame_0002.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0002.jpg",
+        "timestamp": 0.5
+      },
+      {
+        "filename": "frame_0003.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0003.jpg",
+        "timestamp": 1.0
+      },
+      {
+        "filename": "frame_0004.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0004.jpg",
+        "timestamp": 1.5
+      },
+      {
+        "filename": "frame_0005.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0005.jpg",
+        "timestamp": 2.0
+      },
+      {
+        "filename": "frame_0006.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0006.jpg",
+        "timestamp": 2.5
+      },
+      {
+        "filename": "frame_0007.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0007.jpg",
+        "timestamp": 3.0
+      },
+      {
+        "filename": "frame_0008.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0008.jpg",
+        "timestamp": 3.5
+      },
+      {
+        "filename": "frame_0009.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0009.jpg",
+        "timestamp": 4.0
+      },
+      {
+        "filename": "frame_0010.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0010.jpg",
+        "timestamp": 4.5
+      },
+      {
+        "filename": "frame_0011.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0011.jpg",
+        "timestamp": 5.0
+      },
+      {
+        "filename": "frame_0012.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0012.jpg",
+        "timestamp": 5.5
+      },
+      {
+        "filename": "frame_0013.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0013.jpg",
+        "timestamp": 6.0
+      },
+      {
+        "filename": "frame_0014.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0014.jpg",
+        "timestamp": 6.5
+      },
+      {
+        "filename": "frame_0015.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0015.jpg",
+        "timestamp": 7.0
+      },
+      {
+        "filename": "frame_0016.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0016.jpg",
+        "timestamp": 7.5
+      }
+    ]
+  },
+  {
+    "start": 7.72,
+    "end": 10.0,
+    "text": "at a day trading firm.",
+    "speech_emotion": "sad",
+    "speech_confidence": 0.131,
+    "face_emotion": "angry",
+    "face_confidence": 0.391,
+    "face_distribution": {
+      "angry": 0.391,
+      "disgust": 0.0,
+      "fear": 0.327,
+      "happy": 0.004,
+      "sad": 0.27,
+      "surprise": 0.0,
+      "neutral": 0.009
+    },
+    "faces_detected": 4,
+    "fused_emotion": "angry",
+    "fused_confidence": 0.391,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0017.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0017.jpg",
+        "timestamp": 8.0
+      },
+      {
+        "filename": "frame_0018.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0018.jpg",
+        "timestamp": 8.5
+      },
+      {
+        "filename": "frame_0019.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0019.jpg",
+        "timestamp": 9.0
+      },
+      {
+        "filename": "frame_0020.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0020.jpg",
+        "timestamp": 9.5
+      }
+    ]
+  },
+  {
+    "start": 10.0,
+    "end": 13.16,
+    "text": "I've been upping the dose for over a week.",
+    "speech_emotion": "surprised",
+    "speech_confidence": 0.138,
+    "face_emotion": "sad",
+    "face_confidence": 0.662,
+    "face_distribution": {
+      "angry": 0.011,
+      "disgust": 0.0,
+      "fear": 0.035,
+      "happy": 0.09,
+      "sad": 0.662,
+      "surprise": 0.001,
+      "neutral": 0.201
+    },
+    "faces_detected": 7,
+    "fused_emotion": "sad",
+    "fused_confidence": 0.662,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0021.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0021.jpg",
+        "timestamp": 10.0
+      },
+      {
+        "filename": "frame_0022.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0022.jpg",
+        "timestamp": 10.5
+      },
+      {
+        "filename": "frame_0023.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0023.jpg",
+        "timestamp": 11.0
+      },
+      {
+        "filename": "frame_0024.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0024.jpg",
+        "timestamp": 11.5
+      },
+      {
+        "filename": "frame_0025.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0025.jpg",
+        "timestamp": 12.0
+      },
+      {
+        "filename": "frame_0026.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0026.jpg",
+        "timestamp": 12.5
+      },
+      {
+        "filename": "frame_0027.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0027.jpg",
+        "timestamp": 13.0
+      }
+    ]
+  },
+  {
+    "start": 13.16,
+    "end": 19.96,
+    "text": "It seemed to cut my learning curve.",
+    "speech_emotion": "disgust",
+    "speech_confidence": 0.134,
+    "face_emotion": "sad",
+    "face_confidence": 0.389,
+    "face_distribution": {
+      "angry": 0.369,
+      "disgust": 0.014,
+      "fear": 0.035,
+      "happy": 0.16,
+      "sad": 0.389,
+      "surprise": 0.0,
+      "neutral": 0.033
+    },
+    "faces_detected": 13,
+    "fused_emotion": "sad",
+    "fused_confidence": 0.389,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0028.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0028.jpg",
+        "timestamp": 13.5
+      },
+      {
+        "filename": "frame_0029.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0029.jpg",
+        "timestamp": 14.0
+      },
+      {
+        "filename": "frame_0030.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0030.jpg",
+        "timestamp": 14.5
+      },
+      {
+        "filename": "frame_0031.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0031.jpg",
+        "timestamp": 15.0
+      },
+      {
+        "filename": "frame_0032.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0032.jpg",
+        "timestamp": 15.5
+      },
+      {
+        "filename": "frame_0033.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0033.jpg",
+        "timestamp": 16.0
+      },
+      {
+        "filename": "frame_0034.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0034.jpg",
+        "timestamp": 16.5
+      },
+      {
+        "filename": "frame_0035.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0035.jpg",
+        "timestamp": 17.0
+      },
+      {
+        "filename": "frame_0036.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0036.jpg",
+        "timestamp": 17.5
+      },
+      {
+        "filename": "frame_0037.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0037.jpg",
+        "timestamp": 18.0
+      },
+      {
+        "filename": "frame_0038.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0038.jpg",
+        "timestamp": 18.5
+      },
+      {
+        "filename": "frame_0039.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0039.jpg",
+        "timestamp": 19.0
+      },
+      {
+        "filename": "frame_0040.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0040.jpg",
+        "timestamp": 19.5
+      }
+    ]
+  },
+  {
+    "start": 19.96,
+    "end": 34.04,
+    "text": "Hey, while you're buying that, the CEO was just indicted.",
+    "speech_emotion": "disgust",
+    "speech_confidence": 0.136,
+    "face_emotion": "sad",
+    "face_confidence": 0.421,
+    "face_distribution": {
+      "angry": 0.249,
+      "disgust": 0.001,
+      "fear": 0.178,
+      "happy": 0.024,
+      "sad": 0.421,
+      "surprise": 0.0,
+      "neutral": 0.127
+    },
+    "faces_detected": 29,
+    "fused_emotion": "sad",
+    "fused_confidence": 0.421,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0041.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0041.jpg",
+        "timestamp": 20.0
+      },
+      {
+        "filename": "frame_0042.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0042.jpg",
+        "timestamp": 20.5
+      },
+      {
+        "filename": "frame_0043.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0043.jpg",
+        "timestamp": 21.0
+      },
+      {
+        "filename": "frame_0044.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0044.jpg",
+        "timestamp": 21.5
+      },
+      {
+        "filename": "frame_0045.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0045.jpg",
+        "timestamp": 22.0
+      },
+      {
+        "filename": "frame_0046.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0046.jpg",
+        "timestamp": 22.5
+      },
+      {
+        "filename": "frame_0047.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0047.jpg",
+        "timestamp": 23.0
+      },
+      {
+        "filename": "frame_0048.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0048.jpg",
+        "timestamp": 23.5
+      },
+      {
+        "filename": "frame_0049.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0049.jpg",
+        "timestamp": 24.0
+      },
+      {
+        "filename": "frame_0050.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0050.jpg",
+        "timestamp": 24.5
+      },
+      {
+        "filename": "frame_0051.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0051.jpg",
+        "timestamp": 25.0
+      },
+      {
+        "filename": "frame_0052.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0052.jpg",
+        "timestamp": 25.5
+      },
+      {
+        "filename": "frame_0053.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0053.jpg",
+        "timestamp": 26.0
+      },
+      {
+        "filename": "frame_0054.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0054.jpg",
+        "timestamp": 26.5
+      },
+      {
+        "filename": "frame_0055.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0055.jpg",
+        "timestamp": 27.0
+      },
+      {
+        "filename": "frame_0056.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0056.jpg",
+        "timestamp": 27.5
+      },
+      {
+        "filename": "frame_0057.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0057.jpg",
+        "timestamp": 28.0
+      },
+      {
+        "filename": "frame_0058.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0058.jpg",
+        "timestamp": 28.5
+      },
+      {
+        "filename": "frame_0059.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0059.jpg",
+        "timestamp": 29.0
+      },
+      {
+        "filename": "frame_0060.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0060.jpg",
+        "timestamp": 29.5
+      },
+      {
+        "filename": "frame_0061.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0061.jpg",
+        "timestamp": 30.0
+      },
+      {
+        "filename": "frame_0062.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0062.jpg",
+        "timestamp": 30.5
+      },
+      {
+        "filename": "frame_0063.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0063.jpg",
+        "timestamp": 31.0
+      },
+      {
+        "filename": "frame_0064.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0064.jpg",
+        "timestamp": 31.5
+      },
+      {
+        "filename": "frame_0065.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0065.jpg",
+        "timestamp": 32.0
+      },
+      {
+        "filename": "frame_0066.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0066.jpg",
+        "timestamp": 32.5
+      },
+      {
+        "filename": "frame_0067.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0067.jpg",
+        "timestamp": 33.0
+      },
+      {
+        "filename": "frame_0068.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0068.jpg",
+        "timestamp": 33.5
+      },
+      {
+        "filename": "frame_0069.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0069.jpg",
+        "timestamp": 34.0
+      }
+    ]
+  },
+  {
+    "start": 34.04,
+    "end": 37.480000000000004,
+    "text": "But not for the big fat defense contract he bribed his way into.",
+    "speech_emotion": "sad",
+    "speech_confidence": 0.131,
+    "face_emotion": "angry",
+    "face_confidence": 0.66,
+    "face_distribution": {
+      "angry": 0.66,
+      "disgust": 0.0,
+      "fear": 0.02,
+      "happy": 0.048,
+      "sad": 0.071,
+      "surprise": 0.0,
+      "neutral": 0.201
+    },
+    "faces_detected": 6,
+    "fused_emotion": "angry",
+    "fused_confidence": 0.66,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0070.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0070.jpg",
+        "timestamp": 34.5
+      },
+      {
+        "filename": "frame_0071.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0071.jpg",
+        "timestamp": 35.0
+      },
+      {
+        "filename": "frame_0072.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0072.jpg",
+        "timestamp": 35.5
+      },
+      {
+        "filename": "frame_0073.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0073.jpg",
+        "timestamp": 36.0
+      },
+      {
+        "filename": "frame_0074.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0074.jpg",
+        "timestamp": 36.5
+      },
+      {
+        "filename": "frame_0075.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0075.jpg",
+        "timestamp": 37.0
+      }
+    ]
+  },
+  {
+    "start": 37.480000000000004,
+    "end": 38.480000000000004,
+    "text": "That's still on.",
+    "speech_emotion": "disgust",
+    "speech_confidence": 0.133,
+    "face_emotion": "fear",
+    "face_confidence": 0.399,
+    "face_distribution": {
+      "angry": 0.213,
+      "disgust": 0.006,
+      "fear": 0.399,
+      "happy": 0.07,
+      "sad": 0.198,
+      "surprise": 0.0,
+      "neutral": 0.114
+    },
+    "faces_detected": 2,
+    "fused_emotion": "fear",
+    "fused_confidence": 0.399,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0076.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0076.jpg",
+        "timestamp": 37.5
+      },
+      {
+        "filename": "frame_0077.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0077.jpg",
+        "timestamp": 38.0
+      }
+    ]
+  },
+  {
+    "start": 38.480000000000004,
+    "end": 40.120000000000005,
+    "text": "Should be announced next week.",
+    "speech_emotion": "sad",
+    "speech_confidence": 0.131,
+    "face_emotion": "sad",
+    "face_confidence": 0.524,
+    "face_distribution": {
+      "angry": 0.004,
+      "disgust": 0.0,
+      "fear": 0.471,
+      "happy": 0.0,
+      "sad": 0.524,
+      "surprise": 0.0,
+      "neutral": 0.0
+    },
+    "faces_detected": 4,
+    "fused_emotion": "sad",
+    "fused_confidence": 0.524,
+    "fused_source": "face",
+    "emotions_match": true,
+    "conflict_type": null,
+    "frames": [
+      {
+        "filename": "frame_0078.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0078.jpg",
+        "timestamp": 38.5
+      },
+      {
+        "filename": "frame_0079.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0079.jpg",
+        "timestamp": 39.0
+      },
+      {
+        "filename": "frame_0080.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0080.jpg",
+        "timestamp": 39.5
+      },
+      {
+        "filename": "frame_0081.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0081.jpg",
+        "timestamp": 40.0
+      }
+    ]
+  },
+  {
+    "start": 40.120000000000005,
+    "end": 43.0,
+    "text": "I was jacked in, booted up.",
+    "speech_emotion": "surprised",
+    "speech_confidence": 0.133,
+    "face_emotion": "neutral",
+    "face_confidence": 0.5,
+    "face_distribution": {
+      "angry": 0.009,
+      "disgust": 0.0,
+      "fear": 0.03,
+      "happy": 0.002,
+      "sad": 0.459,
+      "surprise": 0.0,
+      "neutral": 0.5
+    },
+    "faces_detected": 5,
+    "fused_emotion": "neutral",
+    "fused_confidence": 0.5,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0082.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0082.jpg",
+        "timestamp": 40.5
+      },
+      {
+        "filename": "frame_0083.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0083.jpg",
+        "timestamp": 41.0
+      },
+      {
+        "filename": "frame_0084.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0084.jpg",
+        "timestamp": 41.5
+      },
+      {
+        "filename": "frame_0085.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0085.jpg",
+        "timestamp": 42.0
+      },
+      {
+        "filename": "frame_0086.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0086.jpg",
+        "timestamp": 42.5
+      }
+    ]
+  },
+  {
+    "start": 43.0,
+    "end": 47.8,
+    "text": "At the end of the week, my brokerage account contained over $2 million.",
+    "speech_emotion": "surprised",
+    "speech_confidence": 0.136,
+    "face_emotion": "sad",
+    "face_confidence": 0.297,
+    "face_distribution": {
+      "angry": 0.205,
+      "disgust": 0.002,
+      "fear": 0.295,
+      "happy": 0.005,
+      "sad": 0.297,
+      "surprise": 0.0,
+      "neutral": 0.196
+    },
+    "faces_detected": 10,
+    "fused_emotion": "sad",
+    "fused_confidence": 0.297,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0087.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0087.jpg",
+        "timestamp": 43.0
+      },
+      {
+        "filename": "frame_0088.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0088.jpg",
+        "timestamp": 43.5
+      },
+      {
+        "filename": "frame_0089.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0089.jpg",
+        "timestamp": 44.0
+      },
+      {
+        "filename": "frame_0090.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0090.jpg",
+        "timestamp": 44.5
+      },
+      {
+        "filename": "frame_0091.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0091.jpg",
+        "timestamp": 45.0
+      },
+      {
+        "filename": "frame_0092.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0092.jpg",
+        "timestamp": 45.5
+      },
+      {
+        "filename": "frame_0093.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0093.jpg",
+        "timestamp": 46.0
+      },
+      {
+        "filename": "frame_0094.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0094.jpg",
+        "timestamp": 46.5
+      },
+      {
+        "filename": "frame_0095.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0095.jpg",
+        "timestamp": 47.0
+      },
+      {
+        "filename": "frame_0096.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0096.jpg",
+        "timestamp": 47.5
+      }
+    ]
+  },
+  {
+    "start": 47.8,
+    "end": 49.8,
+    "text": "Word quickly got out.",
+    "speech_emotion": "surprised",
+    "speech_confidence": 0.136,
+    "face_emotion": "angry",
+    "face_confidence": 0.439,
+    "face_distribution": {
+      "angry": 0.439,
+      "disgust": 0.001,
+      "fear": 0.086,
+      "happy": 0.0,
+      "sad": 0.406,
+      "surprise": 0.0,
+      "neutral": 0.068
+    },
+    "faces_detected": 4,
+    "fused_emotion": "angry",
+    "fused_confidence": 0.439,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0097.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0097.jpg",
+        "timestamp": 48.0
+      },
+      {
+        "filename": "frame_0098.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0098.jpg",
+        "timestamp": 48.5
+      },
+      {
+        "filename": "frame_0099.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0099.jpg",
+        "timestamp": 49.0
+      },
+      {
+        "filename": "frame_0100.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0100.jpg",
+        "timestamp": 49.5
+      }
+    ]
+  },
+  {
+    "start": 49.800000000000004,
+    "end": 50.800000000000004,
+    "text": "That's all for this week.",
+    "speech_emotion": "calm",
+    "speech_confidence": 0.13,
+    "face_emotion": "sad",
+    "face_confidence": 0.7,
+    "face_distribution": {
+      "angry": 0.222,
+      "disgust": 0.0,
+      "fear": 0.056,
+      "happy": 0.0,
+      "sad": 0.7,
+      "surprise": 0.0,
+      "neutral": 0.023
+    },
+    "faces_detected": 1,
+    "fused_emotion": "sad",
+    "fused_confidence": 0.7,
+    "fused_source": "face",
+    "emotions_match": false,
+    "conflict_type": "emotion_mismatch",
+    "frames": [
+      {
+        "filename": "frame_0101.jpg",
+        "path": "outputs/20260215_164010/frames/frame_0101.jpg",
+        "timestamp": 50.0
+      }
+    ]
+  },
+  {
+    "start": 50.800000000000004,
+    "end": 51.800000000000004,
+    "text": "Thanks for watching.",
+    "speech_emotion": "unknown",
+    "speech_confidence": 0.0,
+    "face_emotion": null,
+    "face_confidence": 0,
+    "face_distribution": {},
+    "faces_detected": 0,
+    "fused_emotion": "unknown",
+    "fused_confidence": 0,
+    "fused_source": "speech",
+    "emotions_match": null,
+    "conflict_type": null,
+    "frames": []
+  },
+  {
+    "start": 51.800000000000004,
+    "end": 52.800000000000004,
+    "text": "See you next week.",
+    "speech_emotion": "unknown",
+    "speech_confidence": 0.0,
+    "face_emotion": null,
+    "face_confidence": 0,
+    "face_distribution": {},
+    "faces_detected": 0,
+    "fused_emotion": "unknown",
+    "fused_confidence": 0,
+    "fused_source": "speech",
+    "emotions_match": null,
+    "conflict_type": null,
+    "frames": []
+  },
+  {
+    "start": 52.800000000000004,
+    "end": 52.82000000000001,
+    "text": "Bye.",
+    "speech_emotion": "unknown",
+    "speech_confidence": 0.0,
+    "face_emotion": null,
+    "face_confidence": 0,
+    "face_distribution": {},
+    "faces_detected": 0,
+    "fused_emotion": "unknown",
+    "fused_confidence": 0,
+    "fused_source": "speech",
+    "emotions_match": null,
+    "conflict_type": null,
+    "frames": []
+  }
+]
