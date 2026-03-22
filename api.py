@@ -8,6 +8,7 @@ Provides endpoints for:
 """
 
 import os
+import sys
 import json
 import shutil
 import asyncio
@@ -15,6 +16,8 @@ import subprocess
 from pathlib import Path
 from typing import Optional
 from datetime import datetime
+
+PYTHON = sys.executable
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
@@ -70,8 +73,25 @@ def get_video_duration(video_path: str) -> float:
         return 0
 
 
+async def run_step(step_name: str, video_path: str, output_dir: str, code: str):
+    """Run a pipeline step as a subprocess using the same Python interpreter."""
+    process = await asyncio.create_subprocess_exec(
+        PYTHON, "-c", code,
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE
+    )
+    stdout, stderr = await process.communicate()
+    if process.returncode != 0:
+        err_msg = stderr.decode() if stderr else "Unknown error"
+        print(f"[{step_name}] stderr: {err_msg}")
+        raise Exception(f"{step_name} failed: {err_msg}")
+
+
 async def run_pipeline_async(job_id: str, video_path: str, output_dir: str):
     """Run the analysis pipeline asynchronously."""
+    vp = video_path.replace("\\", "/")
+    od = output_dir.replace("\\", "/")
+
     try:
         jobs[job_id]["status"] = "processing"
         jobs[job_id]["current_step"] = "Initializing..."
@@ -81,156 +101,111 @@ async def run_pipeline_async(job_id: str, video_path: str, output_dir: str):
         jobs[job_id]["current_step"] = "Transcribing audio..."
         jobs[job_id]["progress"] = 10
         
-        process = await asyncio.create_subprocess_exec(
-            "python", "-c", f"""
+        await run_step("Transcription", vp, od, f"""
 import sys
 sys.path.insert(0, '.')
 from transcript import transcribe_video
-transcribe_video('{video_path}', '{output_dir}/transcript.json')
-""",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        await process.wait()
-        if process.returncode != 0:
-            raise Exception("Transcription failed")
+transcribe_video('{vp}', '{od}/transcript.json')
+""")
         jobs[job_id]["progress"] = 20
         
         # Step 2: Frame extraction (20-35%)
         jobs[job_id]["current_step"] = "Extracting frames..."
-        frames_dir = f"{output_dir}/frames"
-        os.makedirs(frames_dir, exist_ok=True)
+        frames_dir = f"{od}/frames"
+        os.makedirs(frames_dir.replace("/", os.sep), exist_ok=True)
         
-        process = await asyncio.create_subprocess_exec(
-            "python", "-c", f"""
+        await run_step("Frame extraction", vp, od, f"""
 import sys
 sys.path.insert(0, '.')
 from frames import extract_frames
-extract_frames('{video_path}', '{frames_dir}', 0.5, '{output_dir}/frames.json')
-""",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        await process.wait()
-        if process.returncode != 0:
-            raise Exception("Frame extraction failed")
+extract_frames('{vp}', '{frames_dir}', 0.5, '{od}/frames.json')
+""")
         jobs[job_id]["progress"] = 35
         
         # Step 3: Speech emotion (35-50%)
         jobs[job_id]["current_step"] = "Analyzing speech emotions..."
         
-        process = await asyncio.create_subprocess_exec(
-            "python", "-c", f"""
+        await run_step("Speech emotion analysis", vp, od, f"""
 import sys
 sys.path.insert(0, '.')
 from emotion import classify_speech_emotions
-classify_speech_emotions('{video_path}', '{output_dir}/transcript.json', '{output_dir}/emotions.json')
-""",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        await process.wait()
-        if process.returncode != 0:
-            raise Exception("Speech emotion analysis failed")
+classify_speech_emotions('{vp}', '{od}/transcript.json', '{od}/emotions.json')
+""")
         jobs[job_id]["progress"] = 50
         
         # Step 4: Facial emotion (50-70%)
         jobs[job_id]["current_step"] = "Analyzing facial expressions..."
         
-        process = await asyncio.create_subprocess_exec(
-            "python", "-c", f"""
+        await run_step("Facial emotion analysis", vp, od, f"""
 import sys
 sys.path.insert(0, '.')
 from face_emotion import analyze_facial_emotions
-analyze_facial_emotions('{frames_dir}', '{output_dir}/face_emotions.json')
-""",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        await process.wait()
-        if process.returncode != 0:
-            raise Exception("Facial emotion analysis failed")
+analyze_facial_emotions('{frames_dir}', '{od}/face_emotions.json')
+""")
         jobs[job_id]["progress"] = 70
         
         # Step 5: Data pairing (70-80%)
         jobs[job_id]["current_step"] = "Fusing multimodal data..."
         
-        process = await asyncio.create_subprocess_exec(
-            "python", "-c", f"""
+        await run_step("Data pairing", vp, od, f"""
 import sys
 sys.path.insert(0, '.')
 from pair import pair_frames_to_transcript
 pair_frames_to_transcript(
-    '{output_dir}/transcript.json',
-    '{output_dir}/frames.json', 
-    '{output_dir}/emotions.json',
-    '{output_dir}/face_emotions.json',
-    '{output_dir}/paired_data.json'
+    '{od}/transcript.json',
+    '{od}/frames.json', 
+    '{od}/emotions.json',
+    '{od}/face_emotions.json',
+    '{od}/paired_data.json'
 )
-""",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        await process.wait()
-        if process.returncode != 0:
-            raise Exception("Data pairing failed")
+""")
         jobs[job_id]["progress"] = 80
         
         # Step 6: Keyframe extraction (80-85%)
         jobs[job_id]["current_step"] = "Selecting keyframes..."
         
-        process = await asyncio.create_subprocess_exec(
-            "python", "-c", f"""
+        await run_step("Keyframe extraction", vp, od, f"""
 import sys
 sys.path.insert(0, '.')
 import json
 from keyframe_extractor import extract_keyframes, get_conflict_summary
 
-with open('{output_dir}/paired_data.json') as f:
+with open('{od}/paired_data.json') as f:
     paired_data = json.load(f)
 
 keyframes = extract_keyframes(paired_data)
-with open('{output_dir}/keyframes.json', 'w') as f:
+with open('{od}/keyframes.json', 'w') as f:
     json.dump(keyframes, f, indent=2)
 
 conflict_summary = get_conflict_summary(paired_data)
-with open('{output_dir}/conflict_summary.json', 'w') as f:
+with open('{od}/conflict_summary.json', 'w') as f:
     json.dump(conflict_summary, f, indent=2)
-""",
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-        await process.wait()
+""")
         jobs[job_id]["progress"] = 85
         
         # Step 7: GPT-4o Analysis (85-100%) - Optional
         if os.environ.get("OPENAI_API_KEY"):
             jobs[job_id]["current_step"] = "Generating AI scene analysis..."
             
-            process = await asyncio.create_subprocess_exec(
-                "python", "-c", f"""
-import sys
+            await run_step("Scene analysis", vp, od, f"""
+import sys, os
 sys.path.insert(0, '.')
+os.environ['OPENAI_API_KEY'] = '{os.environ.get("OPENAI_API_KEY", "")}'
 import json
 from scene_analyzer import analyze_scene, load_conflict_summary
 
-with open('{output_dir}/keyframes.json') as f:
+with open('{od}/keyframes.json') as f:
     keyframes = json.load(f)
-with open('{output_dir}/conflict_summary.json') as f:
+with open('{od}/conflict_summary.json') as f:
     conflict_summary = json.load(f)
 
-# Update frame paths for the output directory
 for kf in keyframes:
-    kf['frame']['path'] = '{output_dir}/frames/' + kf['frame']['filename']
+    kf['frame']['path'] = '{od}/frames/' + kf['frame']['filename']
 
 analysis = analyze_scene(keyframes, conflict_summary, max_frames=8)
-with open('{output_dir}/scene_analysis.json', 'w') as f:
+with open('{od}/scene_analysis.json', 'w') as f:
     json.dump(analysis, f, indent=2)
-""",
-                stdout=asyncio.subprocess.PIPE,
-                stderr=asyncio.subprocess.PIPE
-            )
-            await process.wait()
+""")
         else:
             # Create placeholder analysis
             placeholder = {

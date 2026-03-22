@@ -1,0 +1,155 @@
+[
+  {
+    "start": 0.0,
+    "end": 7.4,
+    "text": "My new friend, Kevin Doyle, showed me how you could leverage two and a half times your",
+    "emotion": "neutral",
+    "confidence": 0.133,
+    "all_emotions": {
+      "neutral": 0.133,
+      "disgust": 0.127,
+      "sad": 0.125,
+      "fearful": 0.125,
+      "angry": 0.125,
+      "happy": 0.123,
+      "surprised": 0.122,
+      "calm": 0.121
+    }
+  },
+  {
+    "start": 7.4,
+    "end": 10.0,
+    "text": "cash at a day trading firm.",
+    "emotion": "angry",
+    "confidence": 0.129,
+    "all_emotions": {
+      "angry": 0.129,
+      "surprised": 0.128,
+      "calm": 0.128,
+      "disgust": 0.126,
+      "sad": 0.126,
+      "fearful": 0.123,
+      "neutral": 0.122,
+      "happy": 0.119
+    }
+  },
+  {
+    "start": 10.0,
+    "end": 16.0,
+    "text": "I've been upping the dose for over a week, it seemed to cut my learning curve.",
+    "emotion": "disgust",
+    "confidence": 0.131,
+    "all_emotions": {
+      "disgust": 0.131,
+      "fearful": 0.13,
+      "calm": 0.125,
+      "neutral": 0.125,
+      "surprised": 0.123,
+      "angry": 0.123,
+      "sad": 0.122,
+      "happy": 0.12
+    }
+  },
+  {
+    "start": 31.0,
+    "end": 34.0,
+    "text": "Who are you buying that? The CEO is just indicted.",
+    "emotion": "angry",
+    "confidence": 0.133,
+    "all_emotions": {
+      "angry": 0.133,
+      "sad": 0.13,
+      "calm": 0.129,
+      "disgust": 0.126,
+      "surprised": 0.125,
+      "fearful": 0.123,
+      "neutral": 0.118,
+      "happy": 0.116
+    }
+  },
+  {
+    "start": 34.0,
+    "end": 37.0,
+    "text": "But not for the big fat defense contract you bribe his way into.",
+    "emotion": "sad",
+    "confidence": 0.132,
+    "all_emotions": {
+      "sad": 0.132,
+      "angry": 0.131,
+      "calm": 0.127,
+      "disgust": 0.126,
+      "fearful": 0.124,
+      "surprised": 0.124,
+      "happy": 0.118,
+      "neutral": 0.118
+    }
+  },
+  {
+    "start": 37.0,
+    "end": 40.0,
+    "text": "That's still on, should be announced next week.",
+    "emotion": "fearful",
+    "confidence": 0.135,
+    "all_emotions": {
+      "fearful": 0.135,
+      "calm": 0.13,
+      "disgust": 0.129,
+      "surprised": 0.127,
+      "neutral": 0.125,
+      "happy": 0.122,
+      "angry": 0.117,
+      "sad": 0.115
+    }
+  },
+  {
+    "start": 40.0,
+    "end": 42.0,
+    "text": "I was jacked in, booted up.",
+    "emotion": "angry",
+    "confidence": 0.136,
+    "all_emotions": {
+      "angry": 0.136,
+      "surprised": 0.131,
+      "sad": 0.123,
+      "neutral": 0.123,
+      "fearful": 0.123,
+      "disgust": 0.123,
+      "calm": 0.121,
+      "happy": 0.119
+    }
+  },
+  {
+    "start": 42.0,
+    "end": 47.0,
+    "text": "At the end of the week my brokerage account contained over two million dollars.",
+    "emotion": "sad",
+    "confidence": 0.131,
+    "all_emotions": {
+      "sad": 0.131,
+      "angry": 0.128,
+      "neutral": 0.127,
+      "calm": 0.125,
+      "surprised": 0.125,
+      "disgust": 0.123,
+      "happy": 0.122,
+      "fearful": 0.119
+    }
+  },
+  {
+    "start": 47.0,
+    "end": 50.0,
+    "text": "Word quickly got out.",
+    "emotion": "angry",
+    "confidence": 0.133,
+    "all_emotions": {
+      "angry": 0.133,
+      "sad": 0.132,
+      "neutral": 0.129,
+      "surprised": 0.124,
+      "disgust": 0.124,
+      "fearful": 0.12,
+      "happy": 0.12,
+      "calm": 0.119
+    }
+  }
+]

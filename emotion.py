@@ -68,10 +68,10 @@ def classify_speech_emotions(
                 "all_emotions": all_emotions
             })
             
-            print(f"  → {top_emotion['label']} ({top_emotion['score']:.2%})")
+            print(f"  -> {top_emotion['label']} ({top_emotion['score']:.2%})")
             
         except Exception as e:
-            print(f"  → Error processing segment: {e}")
+            print(f"  -> Error processing segment: {e}")
             results.append({
                 "start": start,
                 "end": end,

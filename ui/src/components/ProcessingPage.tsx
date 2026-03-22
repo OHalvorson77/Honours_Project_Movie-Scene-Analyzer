@@ -29,12 +29,15 @@ export function ProcessingPage({ jobId, onComplete, onError }: ProcessingPagePro
   const [status, setStatus] = useState<JobStatus | null>(null);
 
   useEffect(() => {
+    let active = true;
+
     const pollStatus = async () => {
       try {
         const response = await fetch(`http://localhost:8000/api/status/${jobId}`);
-        if (!response.ok) throw new Error('Failed to fetch status');
+        if (!response.ok || !active) return;
         
         const data: JobStatus = await response.json();
+        if (!active) return;
         setStatus(data);
 
         if (data.status === 'completed') {
@@ -48,9 +51,10 @@ export function ProcessingPage({ jobId, onComplete, onError }: ProcessingPagePro
     };
 
     pollStatus();
-    const interval = setInterval(pollStatus, 1000);
-    return () => clearInterval(interval);
-  }, [jobId, onComplete, onError]);
+    const interval = setInterval(pollStatus, 2000);
+    return () => { active = false; clearInterval(interval); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [jobId]);
 
   const getStepStatus = (stepThreshold: number) => {
     if (!status) return 'pending';

@@ -24,10 +24,11 @@ export function EmotionTimeline({ segments, currentTime, onSeek, duration }: Emo
   const chartData = useMemo(() => {
     const data: Array<{ time: number; [key: string]: number }> = [];
     
-    // Create data points at each segment boundary
     segments.forEach((segment) => {
       const dist = segment.face_distribution;
-      if (Object.keys(dist).length > 0) {
+      const hasFaceData = Object.keys(dist).length > 0;
+
+      if (hasFaceData) {
         data.push({
           time: segment.start,
           angry: dist.angry || 0,
@@ -38,6 +39,14 @@ export function EmotionTimeline({ segments, currentTime, onSeek, duration }: Emo
           disgust: dist.disgust || 0,
           surprise: dist.surprise || 0,
         });
+      } else if (segment.speech_emotion) {
+        const point: Record<string, number> = { time: segment.start };
+        EMOTIONS.forEach((e) => (point[e] = 0));
+        const emotion = segment.speech_emotion.toLowerCase();
+        if (emotion in point) {
+          point[emotion] = segment.speech_confidence || 0.5;
+        }
+        data.push(point);
       }
     });
     

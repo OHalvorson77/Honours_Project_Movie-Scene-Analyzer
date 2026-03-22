@@ -51,7 +51,8 @@ def analyze_facial_emotions(
                 print(f"  Processed {i + 1}/{len(frames)} frames...")
                 
         except Exception as e:
-            # No face detected or other error
+            if i < 3:
+                print(f"  Frame {frame} error: {e}")
             results.append({
                 "filename": frame,
                 "face_detected": False,
