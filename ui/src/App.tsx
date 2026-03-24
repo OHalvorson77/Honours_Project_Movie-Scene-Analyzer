@@ -142,7 +142,7 @@ function App() {
             <div className="logo-icon">
               <Film size={20} />
             </div>
-            <h1>Owen's Scene Analyzer</h1>
+            <h1>Intelligent Scene Analyzer</h1>
           </div>
           <div className="header-stats">
             <div className="stat">

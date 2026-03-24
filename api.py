@@ -75,10 +75,12 @@ def get_video_duration(video_path: str) -> float:
 
 async def run_step(step_name: str, video_path: str, output_dir: str, code: str):
     """Run a pipeline step as a subprocess using the same Python interpreter."""
+    env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
     process = await asyncio.create_subprocess_exec(
         PYTHON, "-c", code,
         stdout=asyncio.subprocess.PIPE,
-        stderr=asyncio.subprocess.PIPE
+        stderr=asyncio.subprocess.PIPE,
+        env=env,
     )
     stdout, stderr = await process.communicate()
     if process.returncode != 0:

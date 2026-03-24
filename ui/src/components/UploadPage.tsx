@@ -94,7 +94,7 @@ export function UploadPage({ onJobStarted }: UploadPageProps) {
           <div className="upload-logo">
             <Film size={32} />
           </div>
-          <h1>Owen's Scene Analyzer</h1>
+          <h1>Intelligent Movie Scene Analyzer</h1>
           <p>Upload a movie clip to analyze emotions, dialogue, and cinematic elements</p>
         </div>
 

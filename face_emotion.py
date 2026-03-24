@@ -52,7 +52,7 @@ def analyze_facial_emotions(
                 
         except Exception as e:
             if i < 3:
-                print(f"  Frame {frame} error: {e}")
+                print(f"  Frame {frame} error: {str(e).encode('ascii', 'replace').decode()}")
             results.append({
                 "filename": frame,
                 "face_detected": False,
