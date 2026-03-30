@@ -31,7 +31,7 @@ def run_phase1(
     frames_dir: str = "frames",
     interval_seconds: float = 0.5
 ):
-    """Run Phase 1: Core Pipeline - Media parsing and emotion extraction."""
+    # Runs the first phase of the pipeline which is the media parsing and emotion extraction
     print("=" * 60)
     print("PHASE 1: CORE PIPELINE")
     print("=" * 60)
@@ -78,7 +78,7 @@ def run_phase2(max_frames: int = 10, skip_claude: bool = False, use_finetuned: b
     print("PHASE 2: SEMANTIC UNDERSTANDING")
     print("=" * 60)
     
-    # Check for fine-tuned models
+    # Chekcs if the finetuned models exist
     if use_finetuned and HAS_FINETUNE:
         print("\n📦 Checking for fine-tuned models...")
         print_model_status()

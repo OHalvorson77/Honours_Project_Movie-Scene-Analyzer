@@ -2,11 +2,10 @@ import json
 import os
 from collections import Counter
 
+
+# This function is a helper function used to come to a conclusion on dominant emotion for a segment from the emotions from the frames
 def aggregate_facial_emotions(frame_emotions: list) -> dict:
-    """
-    Aggregate facial emotions across multiple frames in a segment.
-    Returns dominant emotion, confidence, and distribution.
-    """
+
     if not frame_emotions:
         return {
             "dominant_emotion": None,
@@ -42,6 +41,7 @@ def aggregate_facial_emotions(frame_emotions: list) -> dict:
     dominant = max(emotion_avg, key=emotion_avg.get) if emotion_avg else None
     confidence = emotion_avg.get(dominant, 0) if dominant else 0
     
+    # Create am object to return with various fields from the aggregated emotions
     return {
         "dominant_emotion": dominant,
         "confidence": round(confidence, 3),
@@ -52,10 +52,7 @@ def aggregate_facial_emotions(frame_emotions: list) -> dict:
 
 
 def blend_emotions(speech_emotion: dict, face_emotion: dict) -> dict:
-    """
-    Blend speech and facial emotions into a fused result.
-    Detects conflicts for later LLM interpretation.
-    """
+
     speech_emo = speech_emotion.get("emotion")
     speech_conf = speech_emotion.get("confidence", 0) or 0
     
@@ -72,11 +69,11 @@ def blend_emotions(speech_emotion: dict, face_emotion: dict) -> dict:
     speech_emo_normalized = emotion_map.get(speech_emo, speech_emo)
     face_emo_normalized = emotion_map.get(face_emo, face_emo)
     
-    # Determine agreement/conflict
+    # Determine if the emotions agree or disagree (None if no emotion is detected)
     if speech_emo_normalized and face_emo_normalized:
         emotions_match = speech_emo_normalized == face_emo_normalized
     else:
-        emotions_match = None  # Can't compare if one is missing
+        emotions_match = None  
     
     # Fused emotion: weighted by confidence
     if speech_emo and face_emo:
@@ -108,10 +105,10 @@ def blend_emotions(speech_emotion: dict, face_emotion: dict) -> dict:
         fused_confidence = 0
         fused_source = None
     
-    # Detect interesting conflicts for LLM interpretation
+    # Detect particular conflicts for LLM interpretation
     conflict_type = None
     if speech_emo and face_emo and not emotions_match:
-        # Flag specific interesting conflicts
+        # Flag specific conflicts types that could be secret undetected expressions
         conflict_pairs = {
             ("calm", "angry"): "possible_sarcasm",
             ("neutral", "angry"): "possible_sarcasm",
@@ -141,17 +138,14 @@ def pair_frames_to_transcript(
     face_emotions_path: str = "face_emotions.json",
     output_path: str = "paired_data.json"
 ):
-    """
-    Group all frames that fall within each transcript segment's time range,
-    merge speech emotions, aggregate facial emotions, and blend them.
-    """
+
+    # Loading in all the available data from the previous steps
     with open(frames_path, "r") as f:
         frames_data = json.load(f)
     
     with open(transcript_path, "r") as f:
         transcript_data = json.load(f)
 
-    # Load speech emotions if available
     emotions_data = []
     if os.path.exists(emotions_path):
         with open(emotions_path, "r") as f:
@@ -163,12 +157,11 @@ def pair_frames_to_transcript(
         with open(face_emotions_path, "r") as f:
             face_emotions_data = json.load(f)
     
-    # Create lookups
+    # Creating lookups for the speech and face emotions
     emotion_lookup = {e["start"]: e for e in emotions_data}
     face_emotion_lookup = {f["filename"]: f for f in face_emotions_data}
 
     frames = frames_data["frames"]
-    interval = frames_data.get("interval_seconds", 0.5)
     
     paired = []
     for segment in transcript_data:
@@ -197,6 +190,7 @@ def pair_frames_to_transcript(
         # Blend speech and facial emotions
         blended = blend_emotions(speech_emotion, aggregated_face)
         
+        # Adding all the results for the segment to the paired array
         paired.append({
             "start": start,
             "end": end,
@@ -219,10 +213,11 @@ def pair_frames_to_transcript(
             "frames": matching_frames
         })
 
+    # Saving the paired data to a json file
     with open(output_path, "w") as f:
         json.dump(paired, f, indent=2)
 
-    # Print summary
+    # Print summary of the pairing findings to the console
     print(f"Paired {len(frames)} frames across {len(transcript_data)} transcript segments\n")
     
     conflicts = [p for p in paired if p["conflict_type"]]

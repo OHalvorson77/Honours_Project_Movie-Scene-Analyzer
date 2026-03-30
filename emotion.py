@@ -1,11 +1,14 @@
+from typing import Any
+
+
 import json
 import subprocess
 import os
 import torch
 from transformers import pipeline
 
+# This is a helper function made to extract the audio segment from the video using ffmpeg
 def extract_audio_segment(video_path: str, start: float, end: float, output_path: str):
-    """Extract audio segment from video using ffmpeg."""
     duration = end - start
     command = [
         "ffmpeg", "-y",
@@ -26,14 +29,14 @@ def classify_speech_emotions(
     output_path: str = "emotions.json",
     temp_dir: str = "temp_audio"
 ):
-    """
-    Run speech emotion recognition on each transcript segment.
-    """
+
     os.makedirs(temp_dir, exist_ok=True)
     
+    # loading the transcript lines
     with open(transcript_path, "r") as f:
         transcript = json.load(f)
     
+    #This loads the speech emotion recognition model from teh huggingface hub
     print("Loading speech emotion recognition model...")
     classifier = pipeline(
         "audio-classification",
@@ -43,7 +46,8 @@ def classify_speech_emotions(
     
     results = []
     
-    for i, segment in enumerate(transcript):
+    # Iterating over the transcript lines and extracting the audio segment from the video using the start and end timestamps
+    for i, segment in enumerate(transcript): 
         start = segment["start"]
         end = segment["end"]
         text = segment["text"]
@@ -51,6 +55,8 @@ def classify_speech_emotions(
         print(f"Processing segment {i+1}/{len(transcript)}: [{start:.2f}s - {end:.2f}s]")
         
         audio_path = os.path.join(temp_dir, f"segment_{i:04d}.wav")
+
+        # Extracting the audio segment from the video using start and end timestamps and then using the model to classify the audio emotion
         try:
             extract_audio_segment(video_path, start, end, audio_path)
             
@@ -81,6 +87,7 @@ def classify_speech_emotions(
                 "all_emotions": {}
             })
     
+    # Outputting the results to a json file
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2)
     
