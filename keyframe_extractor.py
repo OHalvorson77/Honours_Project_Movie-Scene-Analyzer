@@ -1,22 +1,8 @@
-"""
-Keyframe Extractor for Phase 2 - Semantic Understanding
-
-Selects the most emotionally significant frames from paired_data.json to minimize
-the number of frames sent to GPT-4o Vision while preserving key emotional moments.
-
-Selection criteria:
-1. Emotion transitions (when emotion changes between segments)
-2. High confidence emotion detections
-3. Segments with audio/visual emotion conflicts
-4. Representative frames from each transcript segment
-"""
-
 import json
 from typing import List, Dict, Any
 
-
+# Helper function to load the paired_data.json file and data
 def load_paired_data(path: str = "paired_data.json") -> List[Dict[str, Any]]:
-    """Load the paired emotion data."""
     with open(path, "r") as f:
         return json.load(f)
 
@@ -27,18 +13,7 @@ def extract_keyframes(
     include_conflicts: bool = True,
     min_confidence: float = 0.5
 ) -> List[Dict[str, Any]]:
-    """
-    Extract keyframes based on emotional significance.
-    
-    Args:
-        paired_data: The paired transcript/emotion data
-        max_frames_per_segment: Max frames to select per transcript segment
-        include_conflicts: Always include frames from conflict segments
-        min_confidence: Minimum face emotion confidence to consider
-    
-    Returns:
-        List of keyframe objects with metadata
-    """
+
     keyframes = []
     prev_emotion = None
     
@@ -47,12 +22,12 @@ def extract_keyframes(
         if not frames:
             continue
         
-        # Determine segment importance
+        # Determining the segment importance
         is_conflict = segment.get("conflict_type") is not None
         is_transition = prev_emotion and prev_emotion != segment.get("fused_emotion")
         confidence = segment.get("face_confidence", 0)
         
-        # Calculate priority score
+        # Calculating the priority score
         priority = 0
         if is_conflict:
             priority += 3
@@ -81,7 +56,7 @@ def extract_keyframes(
         # Limit frames per segment
         selected_frames = selected_frames[:max_frames_per_segment]
         
-        # Build keyframe entries
+        # Building the keyframe entries
         for frame in selected_frames:
             keyframes.append({
                 "frame": frame,
@@ -103,9 +78,8 @@ def extract_keyframes(
 
 
 def get_conflict_summary(paired_data: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """
-    Generate a summary of emotion conflicts for GPT-4o context.
-    """
+
+    # This function generates and returns a summary of the emotion conflicts from paired.json
     conflicts = []
     
     for i, segment in enumerate(paired_data):
@@ -128,15 +102,15 @@ def get_conflict_summary(paired_data: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
 
+# This function saves the keyframes to json
 def save_keyframes(keyframes: List[Dict[str, Any]], output_path: str = "keyframes.json"):
-    """Save extracted keyframes to JSON."""
+    
     with open(output_path, "w") as f:
         json.dump(keyframes, f, indent=2)
     print(f"Saved {len(keyframes)} keyframes to {output_path}")
 
 
 def main():
-    """Extract keyframes from paired data."""
     print("Loading paired data...")
     paired_data = load_paired_data()
     
