@@ -1,16 +1,3 @@
-"""
-Emotion Arc Extractor
-
-Analyzes the emotional trajectory across the entire clip to:
-1. Identify emotional phases (rising tension, climax, resolution)
-2. Detect key emotional beats/turning points
-3. Track per-character emotion arcs (when multiple characters exist)
-4. Generate arc summary for narrative grounding
-
-This addresses the professor's feedback on extracting the "emotional arc intact"
-and maintaining narrative consistency.
-"""
-
 import json
 from typing import List, Dict, Any, Optional, Tuple
 from collections import defaultdict
@@ -42,13 +29,11 @@ EMOTION_INTENSITY = {
 
 
 def load_paired_data(path: str = "paired_data.json") -> List[Dict[str, Any]]:
-    """Load the paired emotion data."""
     with open(path, "r") as f:
         return json.load(f)
 
 
 def calculate_emotion_metrics(segment: Dict[str, Any]) -> Dict[str, float]:
-    """Calculate valence and intensity for a segment."""
     emotion = segment.get("fused_emotion") or segment.get("speech_emotion") or "neutral"
     confidence = segment.get("fused_confidence", 0) or 0
     
@@ -74,14 +59,7 @@ def detect_turning_points(
     valence_threshold: float = 0.3,
     intensity_threshold: float = 0.2
 ) -> List[Dict[str, Any]]:
-    """
-    Detect emotional turning points where significant shifts occur.
-    
-    A turning point is detected when:
-    - Valence changes significantly (e.g., positive to negative)
-    - Intensity spikes notably
-    - Conflict type appears/disappears
-    """
+
     turning_points = []
     
     for i in range(1, len(segments)):
@@ -138,16 +116,7 @@ def identify_arc_phases(
     segments: List[Dict[str, Any]],
     window_size: int = 3
 ) -> List[Dict[str, Any]]:
-    """
-    Identify narrative arc phases using smoothed emotion trajectory.
-    
-    Phases:
-    - exposition: Initial emotional baseline
-    - rising_action: Increasing tension/intensity
-    - climax: Peak emotional intensity
-    - falling_action: Decreasing tension
-    - resolution: Return to baseline or new equilibrium
-    """
+
     if len(segments) < 5:
         return [{"phase": "short_clip", "segments": list(range(len(segments)))}]
     
@@ -243,9 +212,7 @@ def generate_arc_summary(
     phases: List[Dict[str, Any]],
     turning_points: List[Dict[str, Any]]
 ) -> Dict[str, Any]:
-    """
-    Generate a comprehensive summary of the emotional arc.
-    """
+
     # Overall emotion distribution
     emotion_counts = defaultdict(int)
     for seg in segments:
@@ -318,14 +285,7 @@ def extract_emotion_arc(
     paired_data_path: str = "paired_data.json",
     output_path: str = "emotion_arc.json"
 ) -> Dict[str, Any]:
-    """
-    Main function to extract the complete emotional arc.
     
-    Returns a comprehensive arc analysis including:
-    - Emotional phases (exposition, rising action, climax, falling action, resolution)
-    - Turning points with significance scores
-    - Overall trajectory and summary
-    """
     print("Loading paired data...")
     segments = load_paired_data(paired_data_path)
     
@@ -438,7 +398,6 @@ def print_arc_summary(result: Dict[str, Any]):
 
 
 def main():
-    """Run the emotion arc extraction."""
     result = extract_emotion_arc()
     print_arc_summary(result)
 

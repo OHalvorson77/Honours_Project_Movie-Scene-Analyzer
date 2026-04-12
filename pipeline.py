@@ -16,7 +16,6 @@ from narrative_refiner import refine_narrative, print_refined_summary
 # Fine-tuned model support
 try:
     from finetune import (
-        get_model_status,
         print_model_status,
         analyze_scene_finetuned,
         get_finetuned_gpt_model_id
@@ -73,14 +72,12 @@ def run_phase1(
 
 
 def run_phase2(max_frames: int = 10, skip_claude: bool = False, use_finetuned: bool = False):
-    """Run Phase 2: Semantic Understanding - LLM scene analysis with cross-validation."""
     print("\n" + "=" * 60)
     print("PHASE 2: SEMANTIC UNDERSTANDING")
     print("=" * 60)
     
     # Chekcs if the finetuned models exist
     if use_finetuned and HAS_FINETUNE:
-        print("\n📦 Checking for fine-tuned models...")
         print_model_status()
     
     print("\n" + "-" * 60)
@@ -169,14 +166,6 @@ def run_phase2(max_frames: int = 10, skip_claude: bool = False, use_finetuned: b
 
 
 def run_phase2_5(max_frames: int = 10):
-    """
-    Run Phase 2.5: Contextual Grounding & Narrative Consistency
-    
-    This phase addresses professor feedback on:
-    - Contextual grounding (bridging "what is said" vs "what is happening")
-    - Narrative consistency across multi-scene summaries
-    - Extracting emotional arc intact
-    """
     print("\n" + "=" * 60)
     print("PHASE 2.5: CONTEXTUAL GROUNDING")
     print("=" * 60)
@@ -234,20 +223,7 @@ def run_pipeline(
     skip_claude: bool = False,
     use_finetuned: bool = False
 ):
-    """
-    Run the full analysis pipeline.
-    
-    Args:
-        video_path: Path to input video
-        frames_dir: Directory for extracted frames
-        interval_seconds: Frame extraction interval
-        phase1: Run Phase 1 (media parsing + emotion extraction)
-        phase2: Run Phase 2 (LLM semantic analysis with cross-validation)
-        phase2_5: Run Phase 2.5 (contextual grounding & narrative consistency)
-        max_frames: Max frames to send to LLMs
-        skip_claude: Skip Claude analysis (GPT-4o only)
-        use_finetuned: Use fine-tuned models if available
-    """
+
     if phase1:
         run_phase1(video_path, frames_dir, interval_seconds)
     

@@ -66,7 +66,6 @@ def build_analysis_prompt(
     keyframes: List[Dict[str, Any]], 
     conflict_summary: Dict[str, Any]
 ) -> str:
-    """Build the analysis prompt with transcript and emotion context."""
     
     # Build transcript context
     transcript_lines = []
@@ -173,18 +172,7 @@ def analyze_scene(
     max_frames: int = 10,
     model: str = "gpt-4o"
 ) -> Dict[str, Any]:
-    """
-    Analyze a scene using GPT-4o Vision.
-    
-    Args:
-        keyframes: List of keyframe objects with frame paths
-        conflict_summary: Summary of emotion conflicts
-        max_frames: Maximum number of frames to send (cost control)
-        model: OpenAI model to use
-    
-    Returns:
-        Analysis results as a dictionary
-    """
+
     if not OpenAI:
         raise ImportError("openai package not installed")
     
@@ -220,7 +208,7 @@ def analyze_scene(
                 "type": "image_url",
                 "image_url": {
                     "url": f"data:image/jpeg;base64,{base64_image}",
-                    "detail": "low"  # Use low detail to reduce tokens
+                    "detail": "low"  # This reduces tokens
                 }
             })
     
@@ -259,65 +247,33 @@ def analyze_scene(
 
 
 def save_analysis(analysis: Dict[str, Any], output_path: str = "scene_analysis.json"):
-    """Save the scene analysis to JSON."""
     with open(output_path, "w") as f:
         json.dump(analysis, f, indent=2)
     print(f"Saved analysis to {output_path}")
 
 
 def main():
-    """Run the scene analyzer."""
-    print("=" * 60)
-    print("Scene Analyzer - Phase 2")
-    print("=" * 60)
-    
     # Check for API key
     if not os.environ.get("OPENAI_API_KEY"):
-        print("\n⚠️  OPENAI_API_KEY not set!")
-        print("Set it with: export OPENAI_API_KEY='your-key-here'")
-        print("\nGenerating analysis preview without API call...\n")
+
         
         # Load data for preview
         keyframes = load_keyframes()
         conflict_summary = load_conflict_summary()
-        
-        print(f"Would analyze {len(keyframes)} keyframes")
-        print(f"Found {conflict_summary['conflict_count']} emotion conflicts")
-        print("\nSample prompt preview:")
-        print("-" * 40)
-        print(build_analysis_prompt(keyframes[:3], conflict_summary)[:500] + "...")
+
         return
     
     # Load data
-    print("\nLoading keyframes...")
     keyframes = load_keyframes()
     
-    print("Loading conflict summary...")
     conflict_summary = load_conflict_summary()
     
     # Run analysis
-    print("\nCalling GPT-4o Vision...")
     analysis = analyze_scene(keyframes, conflict_summary)
     
     # Save results
     save_analysis(analysis)
     
-    # Print summary
-    print("\n" + "=" * 60)
-    print("ANALYSIS COMPLETE")
-    print("=" * 60)
-    
-    if "summary" in analysis:
-        print(f"\nScene Summary:\n{analysis['summary']}")
-    
-    if "themes" in analysis and "central_themes" in analysis["themes"]:
-        print(f"\nThemes: {', '.join(analysis['themes']['central_themes'])}")
-    
-    if "_metadata" in analysis:
-        meta = analysis["_metadata"]
-        print(f"\nTokens used: {meta['usage']['total_tokens']}")
-    
-    print(f"\nFull analysis saved to scene_analysis.json")
 
 
 if __name__ == "__main__":

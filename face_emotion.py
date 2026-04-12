@@ -49,8 +49,6 @@ def analyze_facial_emotions(
                 "all_emotions": emotions_normalized
             })
             
-            if (i + 1) % 10 == 0:
-                print(f"  Processed {i + 1}/{len(frames)} frames...")
 
         # For any errors or no face detected frames, add the results to the results list with null values and False for face detected       
         except Exception as e:
@@ -67,12 +65,6 @@ def analyze_facial_emotions(
     # Saving the results to a json file
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2)
-    
-    # Summary stats for logging
-    detected = sum(1 for r in results if r["face_detected"])
-    print(f"\nFacial emotion analysis complete!")
-    print(f"  Faces detected: {detected}/{len(frames)} frames")
-    print(f"  Results saved to {output_path}")
     
     return results
 

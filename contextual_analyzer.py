@@ -38,7 +38,6 @@ def load_json(path: str) -> Any:
 
 
 def build_contextual_system_prompt() -> str:
-    """Build system prompt emphasizing narrative continuity."""
     return """You are an expert film analyst specializing in multimodal scene interpretation with a focus on NARRATIVE CONTINUITY.
 
 Your key responsibilities:
@@ -156,12 +155,7 @@ def analyze_with_context(
     max_frames: int = 10,
     model: str = "gpt-4o"
 ) -> Dict[str, Any]:
-    """
-    Analyze segments with sliding context window.
-    
-    Unlike the original scene_analyzer which analyzes all keyframes at once,
-    this processes segments sequentially, building context as it goes.
-    """
+
     if not OpenAI:
         raise ImportError("openai package not installed")
     
@@ -346,7 +340,7 @@ def synthesize_narrative(
         ][:5]
     }
 
-
+# This function gets called from the pipeline
 def run_contextual_analysis(
     paired_data_path: str = "paired_data.json",
     arc_data_path: str = "emotion_arc.json",
@@ -354,14 +348,12 @@ def run_contextual_analysis(
     output_path: str = "contextual_analysis.json",
     max_frames: int = 10
 ) -> Dict[str, Any]:
-    """
-    Run the full contextual analysis pipeline.
-    """
+
     print("=" * 60)
     print("CONTEXTUAL SCENE ANALYZER")
     print("=" * 60)
     
-    # Load data
+    # Loading in the paired data
     print("\nLoading data...")
     segments = load_paired_data(paired_data_path)
     arc_data = load_json(arc_data_path)

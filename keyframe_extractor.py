@@ -111,26 +111,14 @@ def save_keyframes(keyframes: List[Dict[str, Any]], output_path: str = "keyframe
 
 
 def main():
-    print("Loading paired data...")
     paired_data = load_paired_data()
     
-    print(f"Processing {len(paired_data)} segments...")
     keyframes = extract_keyframes(paired_data)
-    
-    print(f"\nKeyframe extraction complete:")
-    print(f"  Total segments: {len(paired_data)}")
-    print(f"  Keyframes selected: {len(keyframes)}")
-    
-    # Count by priority
-    conflict_frames = sum(1 for kf in keyframes if kf.get("conflict_type"))
-    transition_frames = sum(1 for kf in keyframes if kf.get("is_transition"))
-    print(f"  Conflict frames: {conflict_frames}")
-    print(f"  Transition frames: {transition_frames}")
+
     
     # Generate conflict summary
     conflict_summary = get_conflict_summary(paired_data)
-    print(f"\nConflict summary:")
-    print(f"  {conflict_summary['conflict_count']} segments with audio/visual emotion mismatch")
+
     
     save_keyframes(keyframes)
     

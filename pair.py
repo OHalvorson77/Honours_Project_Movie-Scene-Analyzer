@@ -63,7 +63,7 @@ def blend_emotions(speech_emotion: dict, face_emotion: dict) -> dict:
     # DeepFace: angry, disgust, fear, happy, sad, surprise, neutral
     # Wav2Vec2: angry, calm, disgust, fear, happy, neutral, sad, surprise
     emotion_map = {
-        "calm": "neutral",  # Map calm to neutral for comparison
+        "calm": "neutral",  # Map calm to neutral for comparison since then it makes models the same 
     }
     
     speech_emo_normalized = emotion_map.get(speech_emo, speech_emo)
@@ -223,16 +223,6 @@ def pair_frames_to_transcript(
     conflicts = [p for p in paired if p["conflict_type"]]
     print(f"Emotion conflicts detected: {len(conflicts)}/{len(paired)} segments\n")
     
-    for item in paired:
-        speech = item['speech_emotion'] or '?'
-        face = item['face_emotion'] or '?'
-        fused = item['fused_emotion'] or '?'
-        conflict = f" ⚠️ {item['conflict_type']}" if item['conflict_type'] else ""
-        
-        text_preview = item['text'][:40] + "..." if len(item['text']) > 40 else item['text']
-        print(f"[{item['start']:.1f}s-{item['end']:.1f}s] {text_preview}")
-        print(f"  Speech: {speech} | Face: {face} | Fused: {fused}{conflict}")
-        print(f"  Frames: {len(item['frames'])}\n")
 
     print(f"Paired data saved to {output_path}")
     return paired

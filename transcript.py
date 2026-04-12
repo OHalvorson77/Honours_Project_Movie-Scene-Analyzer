@@ -8,7 +8,6 @@ def transcribe_video(video_path: str, output_path: str = "transcript.json", mode
     model = WhisperModel(model_size, device="cpu")
 
     # Calling the transcribe function from faster whisper to transcribe the video
-    print(f"Transcribing {video_path}...", flush=True)
     segments = model.transcribe(video_path)
 
     transcript_data = []

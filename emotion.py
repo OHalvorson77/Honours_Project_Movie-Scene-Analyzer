@@ -51,9 +51,7 @@ def classify_speech_emotions(
         start = segment["start"]
         end = segment["end"]
         text = segment["text"]
-        
-        print(f"Processing segment {i+1}/{len(transcript)}: [{start:.2f}s - {end:.2f}s]")
-        
+                
         audio_path = os.path.join(temp_dir, f"segment_{i:04d}.wav")
 
         # Extracting the audio segment from the video using start and end timestamps and then using the model to classify the audio emotion
@@ -73,9 +71,7 @@ def classify_speech_emotions(
                 "confidence": round(top_emotion["score"], 3),
                 "all_emotions": all_emotions
             })
-            
-            print(f"  -> {top_emotion['label']} ({top_emotion['score']:.2%})")
-            
+                        
         except Exception as e:
             print(f"  -> Error processing segment: {e}")
             results.append({

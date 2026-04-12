@@ -1,17 +1,3 @@
-"""
-Claude Scene Analyzer for Phase 2 - Cross-Validation
-
-Uses Claude 3.5 Sonnet to analyze keyframes and generate narrative explanations,
-providing a second opinion for comparison with GPT-4o results.
-
-Claude often excels at:
-- Coherent long-form generation
-- Nuanced emotional interpretation
-- Safety-aware analysis
-
-Requires: ANTHROPIC_API_KEY environment variable
-"""
-
 import os
 import json
 import base64
@@ -132,18 +118,7 @@ def analyze_scene_claude(
     max_frames: int = 10,
     model: str = "claude-sonnet-4-20250514"
 ) -> Dict[str, Any]:
-    """
-    Analyze a scene using Claude 3.5 Sonnet.
-    
-    Args:
-        keyframes: List of keyframe objects with frame paths
-        conflict_summary: Summary of emotion conflicts
-        max_frames: Maximum number of frames to send
-        model: Anthropic model to use
-    
-    Returns:
-        Analysis results as a dictionary
-    """
+
     if not anthropic:
         raise ImportError("anthropic package not installed")
     
@@ -231,26 +206,16 @@ def save_analysis(analysis: Dict[str, Any], output_path: str = "claude_analysis.
 
 
 def main():
-    """Run the Claude scene analyzer."""
-    print("=" * 60)
-    print("Claude Scene Analyzer - Phase 2 Cross-Validation")
-    print("=" * 60)
+
     
     # Check for API key
     if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("\n⚠️  ANTHROPIC_API_KEY not set!")
-        print("Set it with: export ANTHROPIC_API_KEY='your-key-here'")
-        print("\nGenerating analysis preview without API call...\n")
+
         
         # Load data for preview
         keyframes = load_keyframes()
         conflict_summary = load_conflict_summary()
-        
-        print(f"Would analyze {len(keyframes)} keyframes")
-        print(f"Found {conflict_summary['conflict_count']} emotion conflicts")
-        print("\nSample prompt preview:")
-        print("-" * 40)
-        print(build_analysis_prompt(keyframes[:3], conflict_summary)[:500] + "...")
+
         return
     
     # Load data
@@ -266,23 +231,6 @@ def main():
     
     # Save results
     save_analysis(analysis)
-    
-    # Print summary
-    print("\n" + "=" * 60)
-    print("CLAUDE ANALYSIS COMPLETE")
-    print("=" * 60)
-    
-    if "summary" in analysis:
-        print(f"\nScene Summary:\n{analysis['summary']}")
-    
-    if "themes" in analysis and "central_themes" in analysis["themes"]:
-        print(f"\nThemes: {', '.join(analysis['themes']['central_themes'])}")
-    
-    if "_metadata" in analysis:
-        meta = analysis["_metadata"]
-        print(f"\nTokens used: {meta['usage']['input_tokens'] + meta['usage']['output_tokens']}")
-    
-    print(f"\nFull analysis saved to claude_analysis.json")
 
 
 if __name__ == "__main__":

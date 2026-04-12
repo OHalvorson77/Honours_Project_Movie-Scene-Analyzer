@@ -73,14 +73,7 @@ def compare_analyses(
     gpt4o_path: str = "scene_analysis.json",
     claude_path: str = "claude_analysis.json"
 ) -> Dict[str, Any]:
-    """
-    Compare GPT-4o and Claude analyses.
-    
-    Returns a comparison report with:
-    - agreements: Areas where both models agree
-    - differences: Areas where they differ
-    - consensus: Merged best-of-both analysis
-    """
+
     gpt4o = load_analysis(gpt4o_path)
     claude = load_analysis(claude_path)
     
@@ -176,14 +169,7 @@ def generate_consensus(
     claude: Dict[str, Any],
     comparison: Dict[str, Any]
 ) -> Dict[str, Any]:
-    """
-    Generate a consensus analysis combining the best of both models.
-    
-    Strategy:
-    - For agreements: Use either (they're similar)
-    - For differences: Include both perspectives
-    - For themes: Merge unique themes from both
-    """
+
     consensus = {
         "scene_overview": {},
         "themes": [],

@@ -43,8 +43,6 @@ def extract_frames(
             "frames": frame_data
         }, f, indent=2)
 
-    print(f"Extracted {len(frames)} frames to {output_dir}/")
-    print(f"Frame metadata saved to {metadata_path}")
     return frame_data
 
 if __name__ == "__main__":
